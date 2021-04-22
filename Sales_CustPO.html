@@ -47,7 +47,7 @@
                                     <div
                                         class="dropdown-menu border rounded shadow" role="menu" id="Sales-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 205px;"><a class="dropdown-item d-block" role="presentation" id="CustPO-Link" href="Sales_CustPO.html" style="height: 50px;margin-top: 5px;"><img class="d-block" id="CustPO-Icon" src="assets/img/CustPO.png" style="width: 20px;"><span id="CustPO-Text">Customer PO</span></a>
                                         <a
-                                            class="dropdown-item d-block" role="presentation" id="CustOrderList-Link" href="Sales CustOL.html" style="height: 50px;margin-top: 5px;width: auto;"><img class="d-block" id="CustOrderList-Icon" src="assets/img/CustOrderList.png" style="width: 20px;"><span id="CustOrderList-Text">Customer Order List</span></a><a class="dropdown-item d-block" role="presentation" id="CustTracker-Link"
+                                            class="dropdown-item d-block" role="presentation" id="CustOrderList-Link" href="Sales_CustOL.html" style="height: 50px;margin-top: 5px;width: auto;"><img class="d-block" id="CustOrderList-Icon" src="assets/img/CustOrderList.png" style="width: 20px;"><span id="CustOrderList-Text">Customer Order List</span></a><a class="dropdown-item d-block" role="presentation" id="CustTracker-Link"
                                                 href="Sales_CustTR.html" style="height: 50px;margin-top: 5px;"><img class="d-block" id="CustTracker-Icon" src="assets/img/CustTracker.png" style="width: 20px;"><span id="CustTracker-Text">Customer Order Tracker</span></a></div>
                             </li>
                             <li class="nav-item dropdown d-block" data-bs-hover-animate="pulse" id="Reorder-Select-DD" style="width: auto;margin-right: 25px;margin-left: 0px;padding-left: 5px;"><a class="dropdown-toggle nav-link d-block" data-toggle="dropdown" aria-expanded="false" id="Reorder-Link" href="#" style="height: 100%;font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 15px;padding-right: 0;padding-left: 0;"><img class="d-block d-xl-flex" id="Reorder-Icon" src="assets/img/SYSTIMP/Reorder%20(Icon).png" style="width: 25px;padding-right: 0px;padding-left: 0px;margin-right: auto;margin-left: auto;padding-top: 15px;padding-bottom: 10px;"><span>Reorder</span></a>
@@ -125,8 +125,8 @@
     </nav>
     <div class="container-fluid" id="Page-Content">
         <div id="Breadcrumb-Border" style="width: auto;margin-bottom: 10px;"></div>
-        <div class="d-sm-flex align-items-center mb-4" id="Page-Header"><img id="Page-Header-Icon" src="assets/img/CustPO.png" style="width: 35px;margin-left: 0px;margin-right: 15px;margin-top: 0px;padding-top: 0px;padding-bottom: 0px;">
-            <h3 class="text-dark mb-0" id="Page-Header-Title" style="color: rgb(0,0,0);font-family: ABeeZee, sans-serif;font-weight: bold;font-size: 35px;">Customer PO</h3>
+        <div class="d-sm-flex align-items-center mb-4" id="Page-Header"><img id="Page-Header-Icon" src="assets/img/CustPO.png" style="width: 60px;margin-left: 0px;margin-right: 15px;margin-top: 0px;padding-top: 0px;padding-bottom: 0px;">
+            <h3 class="text-dark mb-0" id="Page-Header-Title" style="color: rgb(0,0,0);font-family: ABeeZee, sans-serif;font-weight: bold;font-size: 35px;">Sales: Customer Purchase Order</h3>
         </div>
         <div class="card shadow" id="CustPO_Table">
             <div class="card-header py-3" id="Table-Header" style="background-color: rgb(235,235,235);background: linear-gradient(to right, rgba(255, 163, 163, 0.5), rgba(156, 249, 255, 0.5));">
@@ -142,9 +142,9 @@
                         id="Table-PODetail3" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;max-width: 360px;"><label id="Table-EmailLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;">Customer Email:&nbsp;<input class="border rounded border-dark float-right" type="email" id="Table-EmailInput" style="width: 185px;border-radius: 20px;margin-left: 0px;" autocomplete="on" name="CustEmail"></label></div>
             </div>
             <div class="col-auto col-md-6 col-xl-4 text-nowrap" id="Table-PODetailCol2" style="padding-top: 12px;padding-bottom: 12px;">
-                <div id="Table-PODetail4" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;max-width: 360px;"><label id="Table-CustNumLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;">Customer Number:&nbsp;<input class="border rounded border-dark float-right" type="tel" id="Table-CustNameInput" style="border-radius: 20px;" autocomplete="on" name="CustNum"></label></div>
+                <div id="Table-PODetail4" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;max-width: 360px;"><label id="Table-NumLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;">Customer Number:&nbsp;<input class="border rounded border-dark float-right" type="tel" id="Table-NumInput" style="border-radius: 20px;" autocomplete="on" name="CustNum"></label></div>
                 <div
-                    id="Table-PODetail5" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;max-width: 360px;"><label id="Table-CustAddrLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;">Customer Address:&nbsp;<input class="border rounded border-dark float-right" type="text" id="Table-CustAddrInput" style="border-radius: 20px;margin-left: 0px;" name="CustAddr"></label></div>
+                    id="Table-PODetail5" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;max-width: 360px;"><label id="Table-AddrLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;">Customer Address:&nbsp;<input class="border rounded border-dark float-right" type="text" id="Table-AddrInput" style="border-radius: 20px;margin-left: 0px;" name="CustAddr"></label></div>
             <div
                 id="Table-PODetail6" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;max-width: 360px;"><label id="Table-MOPLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;">Mode of Payment:&nbsp;<select class="border rounded border-dark float-right" id="Table-MOPInput" style="width: 185px;border-radius: 20px;height: 28px;" name="CustMOP"><optgroup label="Please Select MOP"><option value="Cash on Delivery">Cash on Delivery</option><option value="Credit/Debit Card">Credit/Debit Card</option><option value="Online Bank Payment">Online Bank Payment</option><option value="G-Cash">G-Cash</option><option value="Shopee Pay">Shopee Pay</option></optgroup></select></label></div>
     </div>
@@ -179,17 +179,26 @@
                             <td class="text-left" id="ProductName-Entry"><input class="border rounded" type="text" id="ProductName-Input" placeholder="Input Product Name" style="width: 100%;border-color: transparent;background-color: transparent;" name="ProdNameInput" autocomplete="on"></td>
                             <td
                                 id="QTY-Entry"><input class="border rounded" type="number" id="QTY-Input" placeholder="Input Quantity" name="QTYInput" style="border-color: transparent;background-color: transparent;"></td>
-                                <td id="UnitPrice-Entry"><input class="border rounded border-white" type="number" id="UnitPrice-Input" step="0.01" placeholder="Input Unit Price" name="UPInput" style="border-color: transparent;background-color: transparent;"></td>
+                                <td id="UnitPrice-Entry"><input class="border rounded" type="number" id="UnitPrice-Input" step="0.01" placeholder="Input Unit Price" name="UPInput" style="border-color: transparent;background-color: transparent;"></td>
                                 <td id="AmountCost-Entry"><input class="border rounded" type="number" id="AmountCost-Input" step="0.01" placeholder="Input Amount Cost" name="ACInput" style="border-color: transparent;background-color: transparent;"></td>
                                 <td class="text-danger"
-                                    id="DeleteRow-Entry"><button class="btn btn-primary text-danger" id="DeleteRowButton" type="button" style="background-color: rgba(78,115,223,0);border-color: transparent;"><i class="fas fa-minus-circle"></i></button></td>
+                                    id="DeleteRow-Entry"></td>
+                        </tr>
+                        <tr class="text-center" id="Table-Row-1">
+                            <td class="text-left" id="ProductName-Entry-1"><input class="border rounded" type="text" id="ProductName-Input-1" placeholder="Input Product Name" style="width: 100%;border-color: transparent;background-color: transparent;" name="ProdNameInput" autocomplete="on"></td>
+                            <td
+                                id="QTY-Entry-1"><input class="border rounded" type="number" id="QTY-Input-1" placeholder="Input Quantity" name="QTYInput" style="border-color: transparent;background-color: transparent;"></td>
+                                <td id="UnitPrice-Entry-1"><input class="border rounded" type="number" id="UnitPrice-Input-1" step="0.01" placeholder="Input Unit Price" name="UPInput" style="border-color: transparent;background-color: transparent;"></td>
+                                <td id="AmountCost-Entry-1"><input class="border rounded" type="number" id="AmountCost-Input-1" step="0.01" placeholder="Input Amount Cost" name="ACInput" style="border-color: transparent;background-color: transparent;"></td>
+                                <td class="text-danger"
+                                    id="DeleteRow-Entry-1"><button class="btn btn-primary text-danger" id="DeleteRowButton-1" type="button" style="background-color: rgba(78,115,223,0);border-color: transparent;"><i class="fas fa-minus-circle"></i></button></td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td class="text-center text-success" id="AddRow-Entry"><button class="btn btn-primary text-success border-white" id="AddRow-Button" type="button" style="background-color: rgba(255,255,255,0);border-color: transparent;"><i class="material-icons">add_circle</i></button></td>
+                            <td class="text-center text-success" id="AddRow-Entry"><button class="btn btn-primary text-success" id="AddRow-Button" type="button" style="background-color: rgba(255,255,255,0);border-color: transparent;"><i class="material-icons">add_circle</i></button></td>
                         </tr>
                     </tbody>
                     <tfoot id="Table-Footer" style="background-color: #dcdcdc;">
