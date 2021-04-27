@@ -128,7 +128,7 @@
         <div class="d-sm-flex align-items-center mb-4" id="Page-Header"><img id="Page-Header-Icon" src="assets/img/CustOrderList.png" style="width: 60px;margin-left: 0px;margin-right: 15px;margin-top: 0px;padding-top: 0px;padding-bottom: 0px;">
             <h3 class="text-dark mb-0" id="Page-Header-Title" style="color: rgb(0,0,0);font-family: ABeeZee, sans-serif;font-weight: bold;font-size: 35px;">Sales: Customer Order List</h3>
         </div>
-        <div class="card shadow" id="ViewInv_Table" style="margin-right: 8vw;margin-left: 8vw;">
+        <div class="card shadow" id="CustOL_Table" style="margin-right: 8vw;margin-left: 8vw;">
             <div class="card-header py-3" id="Table-Header" style="background-color: rgb(235,235,235);background: linear-gradient(to right, #2657eb, #de6161);">
                 <p class="text-center m-0 font-weight-bold" id="Table-HeaderTitle" style="font-size: 30px;font-weight: bold;font-family: 'Open Sans', sans-serif;color: #ffffff;">Customer Order List</p>
                 <div class="row" id="Table-HeaderDetails">
@@ -156,8 +156,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="table-responsive table mt-2" id="ViewInv-TableFrame" role="grid" aria-describedby="dataTable_info">
-                    <table class="table my-0" id="ViewInv-Table">
+                <div class="table-responsive table mt-2" id="CustOL-TableFrame" role="grid" aria-describedby="dataTable_info">
+                    <table class="table my-0" id="CustOL-Table">
                         <thead id="Table-Header">
                             <tr class="text-center" id="Table-HeaderRow" style="background-color: #3e3e3e;font-family: Nunito, sans-serif;color: rgb(255,255,255);/*background: linear-gradient(to right, #2657eb, #de6161);*/">
                                 <th class="text-center" style="width: 40px;"><input type="checkbox" id="Checkbox-Header" disabled=""></th>
@@ -333,28 +333,11 @@
                                                 </thead>
                                                 <tbody id="AddTable-Body">
                                                     <tr id="AddTable-Row">
-                                                        <td id="PONum-InputEntry"><input class="bg-white border rounded border-white" type="text" id="PONum-Input" placeholder="Input PO #" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;background-color: transparent;"
-                                                                autocomplete="off"></td>
-                                                        <td id="DateOrd-InputEntry"><input id="DateOrd-Input" type="date" style="border-color: transparent;background: transparent;"></td>
-                                                        <td id="CustName-InputEntry"><input class="bg-white border rounded border-white" type="text" id="CustName-Input" placeholder="Input Customer Name" name="ProductBrand Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;border-color: transparent;background: transparent;background-color: transparent;"
+                                                        <td id="PONum-InputEntry"><input type="number" id="PONum-Input" name="PONum Input" style="border-color: transparent;width: 100px;" placeholder="Input PO #"></td>
+                                                        <td id="DateOrd-InputEntry"><input id="DateOrd-Input" type="date" style="border-color: transparent;background: transparent;" name="DateOrdered Input"></td>
+                                                        <td id="CustName-InputEntry"><input class="bg-white border rounded border-white" type="text" id="CustName-Input" placeholder="Input Customer Name" name="CustName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;border-color: transparent;background: transparent;background-color: transparent;"
                                                                 autocomplete="on"></td>
-                                                        <td id="Status-InputEntry"><select id="Status-Input" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
-                                                    </tr>
-                                                    <tr id="AddTable-Row-1">
-                                                        <td id="PONum-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="PONum-Input-1" placeholder="Input PO #" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;background-color: transparent;"
-                                                                autocomplete="off"></td>
-                                                        <td id="DateOrd-InputEntry-1"><input id="DateOrd-Input-1" type="date" style="border-color: transparent;background: transparent;"></td>
-                                                        <td id="CustName-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="CustName-Input-1" placeholder="Input Customer Name" name="ProductBrand Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;border-color: transparent;background: transparent;background-color: transparent;"
-                                                                autocomplete="on"></td>
-                                                        <td id="Status-InputEntry-1"><select id="Status-Input-1" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
-                                                    </tr>
-                                                    <tr id="AddTable-Row-2">
-                                                        <td id="PONum-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="PONum-Input-2" placeholder="Input PO #" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;background-color: transparent;"
-                                                                autocomplete="off"></td>
-                                                        <td id="DateOrd-InputEntry-2"><input id="DateOrd-Input-2" type="date" style="border-color: transparent;background: transparent;"></td>
-                                                        <td id="CustName-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="CustName-Input-2" placeholder="Input Customer Name" name="ProductBrand Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;border-color: transparent;background: transparent;background-color: transparent;"
-                                                                autocomplete="on"></td>
-                                                        <td id="Status-InputEntry-2"><select id="Status-Input-2" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
+                                                        <td id="Status-InputEntry"><select id="Status-Input" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;" name="Status Input"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
                                                     </tr>
                                                 </tbody>
                                                 <tfoot id="AddTable-Footer" style="background-color: #dcdcdc;">

@@ -288,7 +288,7 @@
                                                             <th>Discounted<br>Price</th>
                                                             <th>Shopee<br>Rate</th>
                                                             <th>Shopee<br>Price</th>
-                                                            <th class="text-left" style="width: 150px;">Amount</th>
+                                                            <th class="text-center" style="width: 150px;">Amount</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody id="DeleteTable-Body">
@@ -363,28 +363,6 @@
                                                         <td id="SP-EditEntry">EditSP</td>
                                                         <td id="Amount-EditEntry">EditAmount</td>
                                                     </tr>
-                                                    <tr class="text-center" id="EditTable-Row-1">
-                                                        <td class="text-left" id="ProductName-EditEntry-1" contenteditable="true">EditProductName</td>
-                                                        <td id="Brand-EditEntry-1">EditBrand</td>
-                                                        <td id="SRP-EditEntry-1">EditSRP</td>
-                                                        <td id="BP-EditEntry-1">EditBP</td>
-                                                        <td id="DR-EditEntry-1">EditDR</td>
-                                                        <td id="DP-EditEntry-1">EditDP</td>
-                                                        <td id="SR-EditEntry-1">EditSR</td>
-                                                        <td id="SP-EditEntry-1">EditSP</td>
-                                                        <td id="Amount-EditEntry-1">EditAmount</td>
-                                                    </tr>
-                                                    <tr class="text-center" id="EditTable-Row-2">
-                                                        <td class="text-left" id="ProductName-EditEntry-2" contenteditable="true">EditProductName</td>
-                                                        <td id="Brand-EditEntry-2">EditBrand</td>
-                                                        <td id="SRP-EditEntry-2">EditSRP</td>
-                                                        <td id="BP-EditEntry-2">EditBP</td>
-                                                        <td id="DR-EditEntry-2">EditDR</td>
-                                                        <td id="DP-EditEntry-2">EditDP</td>
-                                                        <td id="SR-EditEntry-2">EditSR</td>
-                                                        <td id="SP-EditEntry-2">EditSP</td>
-                                                        <td id="Amount-EditEntry-2">EditAmount</td>
-                                                    </tr>
                                                 </tbody>
                                                 <tfoot id="EditTable-Footer" style="background-color: #dcdcdc;">
                                                     <tr class="text-center" id="EditTable-FooterRow" style="font-weight: bold;">
@@ -437,102 +415,17 @@
                                                 <tr class="text-center" id="AddTable-Row">
                                                     <td class="text-left" id="ProductName-InputEntry"><input class="bg-white border rounded border-white" type="text" id="ProductName-Input" placeholder="Input Product Name" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
                                                             autocomplete="on"></td>
-                                                    <td id="Brand-InputEntry"><input class="bg-white border rounded border-white" type="text" id="Brand-Input" placeholder="Input Brand" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
+                                                    <td id="Brand-InputEntry"><input class="bg-white border rounded border-white" type="text" id="Brand-Input" placeholder="Input Brand" name="ProductBrand Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
                                                             autocomplete="on"></td>
-                                                    <td id="SRP-InputEntry"><input class="bg-white border rounded border-white" type="text" id="SRP-Input" placeholder="Input SRP" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="BP-InputEntry"><input class="bg-white border rounded border-white" type="text" id="BP-Input" placeholder="Input Buying Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
+                                                    <td id="SRP-InputEntry"><input type="number" id="SRP-Input" name="SRP Input" style="border-color: transparent;width: 100px;" placeholder="Input SRP"></td>
+                                                    <td id="BP-InputEntry"><input type="number" id="BP-Input" name="BP Input" style="border-color: transparent;width: 100px;" placeholder="Input Buying Price"></td>
                                                     <td id="DR-InputEntry"><input class="bg-white border rounded border-white" type="text" id="DR-Input" placeholder="Input Discount Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
                                                             autocomplete="on"></td>
-                                                    <td id="DP-InputEntry"><input class="bg-white border rounded border-white" type="text" id="DP-Input" placeholder="Input Discounted Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
+                                                    <td id="DP-InputEntry"><input type="number" id="DP-Input" name="DP Input" style="border-color: transparent;width: 100px;" placeholder="Input Discounted Price"></td>
                                                     <td id="SR-InputEntry"><input class="bg-white border rounded border-white" type="text" id="SR-Input" placeholder="Input Shopee Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
                                                             autocomplete="on"></td>
-                                                    <td id="SP-InputEntry"><input class="bg-white border rounded border-white" type="text" id="SP-Input" placeholder="Input Shopee Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="Amount-InputEntry"><input class="bg-white border rounded border-white" type="text" id="Amount-Input" placeholder="Input Amount" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                </tr>
-                                                <tr class="text-center" id="AddTable-Row-1">
-                                                    <td class="text-left" id="ProductName-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="ProductName-Input-1" placeholder="Input Product Name" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="Brand-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="Brand-Input-1" placeholder="Input Brand" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SRP-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="SRP-Input-1" placeholder="Input SRP" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="BP-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="BP-Input-1" placeholder="Input Buying Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="DR-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="DR-Input-1" placeholder="Input Discount Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="DP-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="DP-Input-1" placeholder="Input Discounted Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SR-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="SR-Input-1" placeholder="Input Shopee Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SP-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="SP-Input-1" placeholder="Input Shopee Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="Amount-InputEntry-1"><input class="bg-white border rounded border-white" type="text" id="Amount-Input-1" placeholder="Input Amount" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                </tr>
-                                                <tr class="text-center" id="AddTable-Row-2">
-                                                    <td class="text-left" id="ProductName-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="ProductName-Input-2" placeholder="Input Product Name" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="Brand-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="Brand-Input-2" placeholder="Input Brand" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SRP-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="SRP-Input-2" placeholder="Input SRP" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="BP-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="BP-Input-2" placeholder="Input Buying Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="DR-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="DR-Input-2" placeholder="Input Discount Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="DP-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="DP-Input-2" placeholder="Input Discounted Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SR-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="SR-Input-2" placeholder="Input Shopee Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SP-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="SP-Input-2" placeholder="Input Shopee Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="Amount-InputEntry-2"><input class="bg-white border rounded border-white" type="text" id="Amount-Input-2" placeholder="Input Amount" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                </tr>
-                                                <tr class="text-center" id="AddTable-Row-3">
-                                                    <td class="text-left" id="ProductName-InputEntry-3"><input class="bg-white border rounded border-white" type="text" id="ProductName-Input-3" placeholder="Input Product Name" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="Brand-InputEntry-3"><input class="bg-white border rounded border-white" type="text" id="Brand-Input-3" placeholder="Input Brand" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SRP-InputEntry-3"><input class="bg-white border rounded border-white" type="text" id="SRP-Input-3" placeholder="Input SRP" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="BP-InputEntry-3"><input class="bg-white border rounded border-white" type="text" id="BP-Input-3" placeholder="Input Buying Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="DR-InputEntry-3"><input class="bg-white border rounded border-white" type="text" id="DR-Input-3" placeholder="Input Discount Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="DP-InputEntry-3"><input class="bg-white border rounded border-white" type="text" id="DP-Input-3" placeholder="Input Discounted Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SR-InputEntry-3"><input class="bg-white border rounded border-white" type="text" id="SR-Input-3" placeholder="Input Shopee Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SP-InputEntry-3"><input class="bg-white border rounded border-white" type="text" id="SP-Input-3" placeholder="Input Shopee Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="Amount-InputEntry-3"><input class="bg-white border rounded border-white" type="text" id="Amount-Input-3" placeholder="Input Amount" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                </tr>
-                                                <tr class="text-center" id="AddTable-Row-4">
-                                                    <td class="text-left" id="ProductName-InputEntry-4"><input class="bg-white border rounded border-white" type="text" id="ProductName-Input-4" placeholder="Input Product Name" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="Brand-InputEntry-4"><input class="bg-white border rounded border-white" type="text" id="Brand-Input-4" placeholder="Input Brand" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SRP-InputEntry-4"><input class="bg-white border rounded border-white" type="text" id="SRP-Input-4" placeholder="Input SRP" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="BP-InputEntry-4"><input class="bg-white border rounded border-white" type="text" id="BP-Input-4" placeholder="Input Buying Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="DR-InputEntry-4"><input class="bg-white border rounded border-white" type="text" id="DR-Input-4" placeholder="Input Discount Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="DP-InputEntry-4"><input class="bg-white border rounded border-white" type="text" id="DP-Input-4" placeholder="Input Discounted Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SR-InputEntry-4"><input class="bg-white border rounded border-white" type="text" id="SR-Input-4" placeholder="Input Shopee Rate" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="SP-InputEntry-4"><input class="bg-white border rounded border-white" type="text" id="SP-Input-4" placeholder="Input Shopee Price" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
-                                                    <td id="Amount-InputEntry-4"><input class="bg-white border rounded border-white" type="text" id="Amount-Input-4" placeholder="Input Amount" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
-                                                            autocomplete="on"></td>
+                                                    <td id="SP-InputEntry"><input type="number" id="SP-Input" name="SP Input" style="border-color: transparent;width: 100px;" placeholder="Input Shopee Price"></td>
+                                                    <td id="Amount-InputEntry"><input type="number" id="Amount-Input" name="Amount Input" style="border-color: transparent;width: 100px;" placeholder="Input Amount"></td>
                                                 </tr>
                                             </tbody>
                                             <tfoot id="AddTable-Footer" style="background-color: #dcdcdc;">
