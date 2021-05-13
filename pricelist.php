@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>LazeRosa - View Inventory</title>
+    <title>LazeRosa - Pricelist</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
@@ -42,13 +42,13 @@
                                                     role="presentation" id="Pricelist-Link" href="Inv_Pricelist.html" style="height: 50px;margin-top: 5px;"><span id="Pricelist-Text">Pricelist</span></a></div>
                                 </li>
                                 <li class="nav-item dropdown d-block" data-bs-hover-animate="pulse" id="Sales-Select-DD" style="width: auto;margin-right: 25px;margin-left: 0px;padding-left: 5px;"><a class="dropdown-toggle nav-link d-block" data-toggle="dropdown" aria-expanded="false" id="Sales-Link" href="#" style="height: 100%;font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 15px;padding-right: 0;padding-left: 0;"><img class="d-block d-xl-flex" id="Sales-Icon" src="assets/img/SYSTIMP/Sales%20(Icon).png" style="width: 25px;padding-right: 0px;padding-left: 0px;margin-right: auto;margin-left: auto;padding-top: 15px;padding-bottom: 10px;"><span>Sales</span></a>
-                                    <div
+                                <div
                                         class="dropdown-menu border rounded shadow" role="menu" id="Sales-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 205px;"><a class="dropdown-item d-block" role="presentation" id="CustPO-Link" href="Sales_CustPO.html" style="height: 50px;margin-top: 5px;"><span id="CustPO-Text">Customer PO</span></a><a class="dropdown-item d-block" role="presentation"
                                             id="CustOrderList-Link" href="Sales_CustOL.html" style="height: 50px;margin-top: 5px;width: auto;"><span id="CustOrderList-Text">Customer Order List</span></a><a class="dropdown-item d-block" role="presentation"
                                             id="CustTracker-Link" href="Sales_CustTR.html" style="height: 50px;margin-top: 5px;"><span id="CustTracker-Text">Customer Order Tracker</span></a></div>
                             </li>
                             <li class="nav-item dropdown d-block" data-bs-hover-animate="pulse" id="Reorder-Select-DD" style="width: auto;margin-right: 25px;margin-left: 0px;padding-left: 5px;"><a class="dropdown-toggle nav-link d-block" data-toggle="dropdown" aria-expanded="false" id="Reorder-Link" href="#" style="height: 100%;font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 15px;padding-right: 0;padding-left: 0;"><img class="d-block d-xl-flex" id="Reorder-Icon" src="assets/img/SYSTIMP/Reorder%20(Icon).png" style="width: 25px;padding-right: 0px;padding-left: 0px;margin-right: auto;margin-left: auto;padding-top: 15px;padding-bottom: 10px;"><span>Reorder</span></a>
-                                <div
+                            <div
                                     class="dropdown-menu border rounded shadow" role="menu" id="Reorder-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 195px;"><a class="dropdown-item d-block" role="presentation" id="SuppPO-Link" href="Reorder_SuppPO.html" style="height: 50px;margin-top: 5px;"><span id="SuppPO-Text">Supplier PO</span></a><a class="dropdown-item d-block" role="presentation"
                                         id="SuppOrderList-Link" href="Reorder_SuppOL.html" style="height: 50px;margin-top: 5px;width: auto;"><span id="SuppOrderList-Text">Supplier Order List</span></a><a class="dropdown-item d-block" role="presentation" id="SuppTracker-Link"
                                         href="Reorder_SuppTR.html" style="height: 50px;margin-top: 5px;"><span id="SuppTracker-Text">Supplier Order Tracker</span></a></div>
@@ -120,12 +120,12 @@
     <div class="container-fluid" id="Page-Content">
         <div id="Breadcrumb-Border" style="width: auto;margin-bottom: 10px;"></div>
         <div class="d-sm-flex align-items-center mb-4" id="Page-Header">
-            <h3 class="text-dark mb-0" id="Page-Header-Title" style="color: rgb(0,0,0);font-family: ABeeZee, sans-serif;font-weight: bold;font-size: 35px;">INVENTORY: View Inventory</h3>
+            <h3 class="text-dark mb-0" id="Page-Header-Title" style="color: rgb(0,0,0);font-family: ABeeZee, sans-serif;font-weight: bold;font-size: 35px;letter-spacing: normal;">INVENTORY: Pricelist</h3>
         </div>
         <hr>
-        <div class="card shadow" id="ViewInv_Table" style="margin-right: 8vw;margin-left: 8vw;">
+        <div class="card shadow" id="Pricelist_Table" style="margin-right: 8vw;margin-left: 8vw;">
             <div class="card-header py-3" id="Table-Header" style="background-color: rgb(101,118,122);/*background: linear-gradient(to right, #2657eb, #de6161);*/">
-                <p class="text-center m-0 font-weight-bold" id="Table-HeaderTitle" style="font-size: 30px;font-weight: bold;font-family: 'Open Sans', sans-serif;color: #ffffff;">Our Inventory</p>
+                <p class="text-center m-0 font-weight-bold" id="Table-HeaderTitle" style="font-size: 30px;font-weight: bold;font-family: 'Open Sans', sans-serif;color: #ffffff;">Inventory Pricelist</p>
                 <div class="row" id="Table-HeaderDetails">
                     <div class="col" id="Table-HeaderDetail-1">
                         <p class="text-right m-0 font-weight-bold" id="Table-TodayDate-Intro" style="font-size: 15px;width: 100%;font-family: 'Open Sans', sans-serif;color: #dddddd;font-weight: normal;">As of TODAY:&nbsp;</p>
@@ -144,17 +144,14 @@
                     <div class="col-md-6 text-nowrap" id="Table-Tool1">
                         <div id="Table-Tool1-Frame" class="dataTables_length" aria-controls="dataTable"><label id="Table-ShowItemNumber">Show&nbsp;<select id="Table-ShowItem-Dropdown" class="form-control form-control-sm custom-select custom-select-sm"><option value="10" selected="">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>&nbsp;</label></div>
                     </div><!-- this is show -->
-                    <div class="col-md-6" id="Table-Tool2"><!-- this is search -->
-                        <form action="viewinventory.php" method="POST">
-                            <div class="text-md-right dataTables_filter" id="Table-Tool2-Frame"><label id="Table-Search" style="width: 350px;padding-right: 0px;margin-right: 12px;"><input type="search" id="Table-SearchBar" name = "search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search Product Name"></label>
-                                <button
-                                    class="btn" id="Table-SearchButton" type="submit" style="background-color: rgba(78,115,223,0);border-color: transparent;width: auto;padding-bottom: 0px;padding-top: 0px;padding-right: 0px;padding-left: 0px;"><img id="Search-ButtonIMG" src="assets/img/SYSTIMP/Search%20(Icon).png" style="width: 20px;"></button>
-                            </div>
-                        </form>
-                        
+                    <div class="col-md-6" id="Table-Tool2">
+                        <div class="text-md-right dataTables_filter" id="Table-Tool2-Frame"><label id="Table-Search" style="width: 350px;padding-right: 0px;margin-right: 12px;"><input type="search" id="Table-SearchBar" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label>
+                            <button
+                                class="btn" id="Table-SearchButton" type="submit" style="background-color: rgba(78,115,223,0);border-color: transparent;width: auto;padding-bottom: 0px;padding-top: 0px;padding-right: 0px;padding-left: 0px;"><img id="Search-ButtonIMG" src="assets/img/SYSTIMP/Search%20(Icon).png" style="width: 20px;"></button>
+                        </div>
                     </div> <!-- this is search -->
                 </div>
-                <form method="POST" action = "">
+                <form method="POST" action="">
                 <div class="table-responsive table mt-2" id="ViewInv-TableFrame" role="grid" aria-describedby="dataTable_info">
                     <table class="table my-0" id="ViewInv-Table">
                         <thead id="Table-Header">
@@ -162,51 +159,17 @@
                                 <th class="text-center" style="width: 40px;"><input type="checkbox" id="Checkbox-Header" disabled=""></th>
                                 <th>Product ID</th>
                                 <th>Product Name</th>
-                                <th class="text-left" style="width: 200px;">Brand</th>
-                                <th class="text-left" style="width: 150px;">QTY On Hand</th>
-                                <th class="text-left" style="width: 150px;">Reorder Point</th>
-                                <th class="text-left" style="width: 215px;">Availability</th>
+                                <th class="text-left" style="width: 200px;">SRP</th>
+                                <th class="text-left" style="width: 150px;">Buying Price</th>
+                                <th class="text-left" style="width: 150px;">Discount rate</th>
+                                <th class="text-left" style="width: 215px;">Discount Price</th>
+                                <th class="text-left" style="width: 215px;">Shopee Rate</th>
+                                <th class="text-left" style="width: 215px;">Shopee Price</th>
+                                <th class="text-left" style="width: 215px;">Amount</th>
                             </tr>
                         </thead>
                         <tbody id="Table-Body">
                         <?php
-                        if(isset($_POST['search'])){
-                            require("connect.php");
-                            $search = $_POST['search'];
-                            $search = preg_replace("#[^0-9a-z]#i", "", $search);
-                            $searchquery = mysqli_query($DBConnect, "SELECT * FROM tblinventory WHERE pName LIKE '%$search%' OR pBrand LIKE '%$search%'");
-                            $count = mysqli_num_rows($searchquery);
-
-                            if($count == 0){
-                                $output = 'There was no search result';
-                            }
-                            else{
-                                while($row = mysqli_fetch_array($searchquery)){
-                                    echo "<tr>";
-                                    echo "<td><input type='checkbox' name='checkboxid[]' value=$row[pID]></td>";
-                                    echo "<td class='id'>".$row["pID"]. "</td>";
-                                    echo "<td class='name'>".$row["pName"]. "</td>";
-                                    echo "<td class='brand'>".$row["pBrand"]. "</td>";
-                                    echo "<td class='quantity'>".$row["pQuantity"]. "</td>";
-                                    echo "<td class='reorder'>".$row["pReorderPoint"]. "</td>";
-                                    if($row["pQuantity"] > ($row["pReorderPoint"]) + 10){
-                                        $availability = "high";
-                                        echo "<td>".$availability."</td>";
-                                    }
-                                    else if($row["pQuantity"] <= $row["pReorderPoint"]){
-                                        $availability = "low";
-                                        echo "<td>".$availability." <button class='btn btn-primary btn-sm border-dark shadow float-right' type='button' style='background-color: #ff7a00;color: rgb(255,255,255);font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;font-family: 'Open Sans', sans-serif;'>REORDER</button></td>";
-                                    }
-                                    else if ($row["pQuantity"] > $row["pReorderPoint"]){
-                                        $availability = "medium";
-                                        echo "<td>".$availability."</td>";
-                                    }
-
-                                    echo "</tr>";
-                                }
-                            }
-                        }
-                        else{
                             require("connect.php");
                             $page = $_GET["page"];
                             if($page=="" || $page == "1"){
@@ -215,6 +178,9 @@
                             else{
                                 $page1 = ($page*20)-20;
                             }
+                            $discountprice;
+                            $shopeeprice;
+                            $amount;
                             $query = mysqli_query($DBConnect, "SELECT * FROM tblinventory ORDER BY pID limit $page1, 20");
                             echo mysqli_error($DBConnect);
                             while($retrieve = mysqli_fetch_array($query)){
@@ -222,24 +188,30 @@
                                 echo "<td><input type='checkbox' name='checkboxid[]' value=$retrieve[pID]></td>";
                                 echo "<td class='id'>".$retrieve["pID"]. "</td>";
                                 echo "<td class='name'>".$retrieve["pName"]. "</td>";
-                                echo "<td class='brand'>".$retrieve["pBrand"]. "</td>";
-                                echo "<td class='quantity'>".$retrieve["pQuantity"]. "</td>";
-                                echo "<td class='reorder'>".$retrieve["pReorderPoint"]. "</td>";
-                                if($retrieve["pQuantity"] > ($retrieve["pReorderPoint"]) + 10){
-                                    // $availability = $retrieve["pAvailability"];
-                                    $availability = "high";
-                                    echo "<td>".$availability."</td>";
-                                }
-                                else if($retrieve["pQuantity"] <= $retrieve["pReorderPoint"]){
-                                    // $availability = $retrieve["pAvailability"];
-                                    $availability = "low";
-                                    echo "<td>".$availability." <button class='btn btn-primary btn-sm border-dark shadow float-right' type='button' style='background-color: #ff7a00;color: rgb(255,255,255);font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;font-family: 'Open Sans', sans-serif;'>REORDER</button></td>";
-                                }
-                                else if ($retrieve["pQuantity"] > $retrieve["pReorderPoint"]){
-                                    // $availability = $retrieve["pAvailability"];
-                                    $availability = "medium";
-                                    echo "<td>".$availability."</td>";
-                                }
+                                echo "<td class='srp'>".$retrieve["pSRP"]. "</td>";
+                                echo "<td class='buyprice'>".$retrieve["pBuyingPrice"]. "</td>";
+                                echo "<td class='discrate'>".$retrieve["pDiscountRate"]. "</td>";
+                                $discountprice = $retrieve["pBuyingPrice"] *(1 - ($retrieve["pDiscountRate"] / 100));
+                                echo "<td>".$discountprice. "</td>";
+
+                                echo "<td class='shopeerate'>".$retrieve["pShopeeRate"]. "</td>";
+                                $shopeeprice = $retrieve["pBuyingPrice"] *(1-($retrieve["pShopeeRate"] / 100));
+                                echo "<td>".$shopeeprice. "</td>";
+
+                                $amount = $discountprice * (1-($retrieve["pShopeeRate"] / 100));
+                                echo "<td>".$amount. "</td>";
+                                // echo "<td class='quantity'>".$retrieve["pQuantity"]. "</td>";
+                                // echo "<td class='reorder'>".$retrieve["pReorderPoint"]. "</td>";
+                                // if($retrieve["pQuantity"] > $retrieve["pReorderPoint"]){
+                                //     // $availability = $retrieve["pAvailability"];
+                                //     $availability = "high";
+                                //     echo "<td>".$availability."</td>";
+                                // }
+                                // else if($retrieve["pQuantity"] <= $retrieve["pReorderPoint"]){
+                                //     // $availability = $retrieve["pAvailability"];
+                                //     $availability = "low";
+                                //     echo "<td>".$availability."</td>";
+                                // }
 
                                 echo "</tr>";
                                 
@@ -257,7 +229,7 @@
                                 <?php
 							}
 							*/
-                        }
+
                         ?>
 
 						<!--
@@ -278,10 +250,13 @@
                                 <td><input type="checkbox" id="Checkbox-Footer" disabled=""></td>
                                 <td><strong>Product ID</strong></td>
                                 <td><strong>Product Name</strong></td>
-                                <td><strong>Brand</strong></td>
-                                <td><strong>QTY on Hand</strong></td>
-                                <td><strong>Reorder Point</strong></td>
-                                <td><strong>Availability</strong></td>
+                                <td><strong>SRP</strong></td>
+                                <td><strong>Buying Price</strong></td>
+                                <td><strong>Discount rate</strong></td>
+                                <td><strong>Discount Price</strong></td>
+                                <td><strong>Shopee Rate</strong></td>
+                                <td><strong>Shopee Price</strong></td>
+                                <td><strong>Amount</strong></td>
                             </tr>
                         </tfoot>
                     </table>
@@ -315,7 +290,7 @@
 								for($b=1; $b <= $a; $b++){
 									?>
 									<li class="page-item <?php if($b == $page){ echo ' active'; } ?>" id="Table-PageNav">
-										<a class="page-link" id="Table-PageNav-Link" href="viewinventory.php?page=<?php echo $b; ?>"><?php echo $b.""; ?></a>
+										<a class="page-link" id="Table-PageNav-Link" href="pricelist.php?page=<?php echo $b; ?>"><?php echo $b.""; ?></a>
 									</li>
 									<?php
 								}
@@ -340,7 +315,7 @@
                     </div>
                 </div>
                 <div class="row" id="Table-Button-Row">
-                <div class="col-md-6" id="SelectReorder-Column" style="width: 100%;"><button class="btn btn-primary" id="DeleteButton-1" data-toggle="modal" type="button" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;background-color: #ff7a00;border-color: transparent;">REORDER SELECTED ITEMS</button></div>
+                    <div class="col-md-6" id="SelectReorder-Column" style="width: 100%;"><button class="btn btn-primary btn-sm border-dark shadow float-left" id="SelectReorder-Button" type="button" style="background-color: #ff7a00;color: rgb(0,0,0);font-family: 'Open Sans', sans-serif;font-weight: bold;font-size: 16px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;border-width: 2px;/*border-color: rgb(0,0,0);*/">REORDER SELECTED ITEMS</button></div>
                     <div
                         class="col" id="DeleteInv-Column">
                         <div id="ViewInv_Delete"><a class="btn btn-danger float-right" name="deletedisplay" type="submit" role="button" id="DeleteButton" data-toggle="modal" href="#DeletePopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">DELETE</a>
@@ -417,9 +392,10 @@
                                                 <tr id="EditTable-HeaderRow" style="background-color: #FF7A00;font-family: Nunito, sans-serif;color: rgb(0,0,0);">
                                                     <th>Product ID</th>
                                                     <th>Product Name</th>
-                                                    <th class="text-left" style="width: 200px;">Brand</th>
-                                                    <th class="text-left" style="width: 150px;">QTY On Hand</th>
-                                                    <th class="text-left" style="width: 150px;">Reorder Point</th>
+                                                    <th class="text-left" style="width: 200px;">SRP</th>
+                                                    <th class="text-left" style="width: 150px;">Buying Price</th>
+                                                    <th class="text-left" style="width: 150px;">Discount Rate</th>
+                                                    <th class="text-left" style="width: 150px;">Shopee Rate</th>
                                                 </tr>
                                             </thead>
                                             <tbody id="EditTable-Body">
@@ -430,16 +406,17 @@
                                                         $extract = implode($all);
                                                         $pID = $_POST["pidedit"];
                                                         $pName = $_POST["pnameedit"];
-                                                        $pBrand = $_POST["pbrandedit"];
-                                                        $pqty = $_POST["pqtyedit"];
-                                                        $preorder = $_POST["prpedit"];
+                                                        $pSRP = $_POST["psrpedit"];
+                                                        $pBPrice = $_POST["pbpriceedit"];
+                                                        $pDiscountR = $_POST["pdiscountedit"];
+                                                        $pShopeeR = $_POST["pshopeeedit"];
                                                         // echo $extract;
-                                                        $query = "UPDATE tblinventory SET pID='$pID', pName='$pName', pBrand='$pBrand',
-                                                        pQuantity='$pqty', pReorderPoint='$preorder' WHERE pID='$pID'";
+                                                        $query = "UPDATE tblinventory SET pID='$pID', pName='$pName', pSRP='$pSRP',
+                                                        pBuyingPrice='$pBPrice', pDiscountRate='$pDiscountR', pShopeeRate='$pShopeeR' WHERE pID='$pID'";
                                                         $query2 = mysqli_query($DBConnect, $query);
 
                                                         if($query2){
-                                                            echo "<script type='text/javascript'> document.location = 'viewinventory.php'; </script>";
+                                                            echo "<script type='text/javascript'> document.location = 'pricelist.php'; </script>";
                                                         }
                                                     }
                                                 ?>
@@ -541,7 +518,7 @@
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src='custom2.js'></script>
 </body>
 
 </html>

@@ -34,21 +34,23 @@
                                 <div class="text-center"><img src="assets/img/SYSTIMP/LazeRosa%20Logo.png" style="width: 175px;margin-bottom: 20px;">
                                     <h4 class="text-white mb-4" style="font-family: ABeeZee, sans-serif;font-size: 25px;">Welcome to LazeRosa!</h4>
                                 </div>
-                                <form class="user">
-                                    <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email" name="Email" autocomplete="on" style="background-color: rgba(0,0,0,0.5);"></div>
-                                    <div
-                                        class="form-group"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Password" name="password" style="background-color: rgba(0,0,0,0.5);"></div>
+                                <form class="user" method="POST">
+                                <?php
+                                        if(isset($_GET['err'])){ ?>
+                                            <p class="err"><?php echo $_GET['err']; ?></p>
+                                    <?php    }
+                                    ?>
+                                    <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email" name="email" autocomplete="on" style="background-color: rgba(0,0,0,0.5);" required></div>
+                                    <div class="form-group"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Password" name="password" style="background-color: rgba(0,0,0,0.5);" required></div>
+                                    
                             <div class="form-group">
                                 <div class="custom-control custom-checkbox small">
                                     <div class="form-check"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" for="formCheck-1">Remember Me</label></div>
                                 </div>
-                            </div><button class="btn btn-primary btn-block text-white btn-user" type="submit" style="background: linear-gradient(to right, #2657eb, #de6161);background: linear-gradient(to right, #2657eb, #de6161);">LOGIN</button>
-                            <a
-                                class="btn btn-primary btn-block text-white btn-user" role="button" id="REMOVE_THIS_BUTTON_LATER" style="background: background: linear-gradient(to right, #2657eb, #de6161);background: linear-gradient(to right, #2657eb, #de6161);"
-                                href="Home_Dashboard.html">Button to Proceed (For testing, remove later)</a>
-                                <hr>
-                                </form>
-                                <div class="text-center"><a class="small" href="forgot-password.html">Forgot Password?</a></div>
+                                </div><button class="btn btn-primary btn-block text-white btn-user" type="submit" style="background: linear-gradient(to right, #2657eb, #de6161);background: linear-gradient(to right, #2657eb, #de6161);">LOGIN</button>
+                            <hr>
+                            </form>
+                            <div class="text-center"><a class="small" href="forgot-password.html">Forgot Password?</a></div>
                         </div>
                     </div>
                 </div>
@@ -65,3 +67,26 @@
 </body>
 
 </html>
+<?php
+    require("connect.php");
+
+    if(isset($_POST["submit"])){
+        $temail = $_POST["email"];
+        $tpword = $_POST["password"];
+        $tpword = md5($tpword);
+        $sql = mysqli_query($DBConnect, "SELECT upassword FROM users WHERE uemail='$temail'");
+        if($row=mysqli_fetch_array($sql)){
+            if($tpword==$row['upassword']){
+                echo "<script type='text/javascript'> document.location = 'dashboard.php'; </script>";
+                exit();
+            }
+            else{
+                echo "<script type='text/javascript'> document.location = 'login.php?err=Username/Password incorrect'; </script>";
+            }
+        }
+        else{
+            echo "<script type='text/javascript'> document.location = 'login.php?err=Username/Password incorrect'; </script>";
+        }
+
+    }
+?>
