@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="assets/css/Jost.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/css/breadcrumb.css">
@@ -23,7 +24,7 @@
 </head>
 
 <body id="Page-Body">
-    <div id="Page-Wrapper">
+<div id="Page-Wrapper">
         <div class="d-flex flex-column" id="Body-Wrapper">
             <div id="Body">
                 <nav class="navbar navbar-light navbar-expand sticky-top bg-white shadow mb-4 topbar static-top" id="Navigation-Bar" style="height: 90px;padding-left: 0px;margin-bottom: 0px;padding-bottom: 8px;">
@@ -37,25 +38,31 @@
                                         </li>
                                         <li class="nav-item dropdown d-block" data-bs-hover-animate="pulse" id="Inventory-Select-DD" style="width: auto;margin-right: 25px;margin-left: 0px;padding-left: 5px;"><a class="dropdown-toggle nav-link d-block" data-toggle="dropdown" aria-expanded="false" id="Inventory-Link" href="#" style="height: 100%;font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 15px;padding-right: 0;padding-left: 0;"><img class="d-block d-xl-flex" id="Inventory-Icon" src="assets/img/SYSTIMP/Inventory%20(Icon).png" style="width: 25px;padding-right: 0px;padding-left: 0px;margin-right: auto;margin-left: auto;padding-top: 15px;padding-bottom: 10px;"><span>Inventory</span></a>
                                             <div
-                                                class="dropdown-menu border rounded shadow" role="menu" id="Inventory-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: auto;"><a class="dropdown-item d-block" role="presentation" id="ViewInv-Link" href="Inv_ViewInv.html" style="height: 50px;margin-top: 5px;"><span id="ViewInv-Text">View Inventory</span></a><a class="dropdown-item d-block"
-                                                    role="presentation" id="Pricelist-Link" href="Inv_Pricelist.html" style="height: 50px;margin-top: 5px;"><span id="Pricelist-Text">Pricelist</span></a></div>
+                                                class="dropdown-menu border rounded shadow" role="menu" id="Inventory-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: auto;"><a class="dropdown-item d-block" role="presentation" id="ViewInv-Link" href="Inv_ViewInv.html" style="height: 50px;margin-top: 5px;"><img class="d-block" id="ViewInv-Icon" src="assets/img/SYSTIMP/ViewInv.png" style="width: 20px;"><span id="ViewInv-Text">View Inventory</span></a>
+                                                <a
+                                                    class="dropdown-item d-block" role="presentation" id="Pricelist-Link" href="Inv_Pricelist.html" style="height: 50px;margin-top: 5px;"><img class="d-block" id="Pricelist-Icon" src="assets/img/Pricelist.png" style="width: 20px;"><span id="Pricelist-Text">Pricelist</span></a>
+                                </div>
                                 </li>
                                 <li class="nav-item dropdown d-block" data-bs-hover-animate="pulse" id="Sales-Select-DD" style="width: auto;margin-right: 25px;margin-left: 0px;padding-left: 5px;"><a class="dropdown-toggle nav-link d-block" data-toggle="dropdown" aria-expanded="false" id="Sales-Link" href="#" style="height: 100%;font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 15px;padding-right: 0;padding-left: 0;"><img class="d-block d-xl-flex" id="Sales-Icon" src="assets/img/SYSTIMP/Sales%20(Icon).png" style="width: 25px;padding-right: 0px;padding-left: 0px;margin-right: auto;margin-left: auto;padding-top: 15px;padding-bottom: 10px;"><span>Sales</span></a>
                                     <div
-                                        class="dropdown-menu border rounded shadow" role="menu" id="Sales-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 205px;"><a class="dropdown-item d-block" role="presentation" id="CustPO-Link" href="Sales_CustPO.html" style="height: 50px;margin-top: 5px;"><span id="CustPO-Text">Customer PO</span></a><a class="dropdown-item d-block" role="presentation"
-                                            id="CustOrderList-Link" href="Sales_CustOL.html" style="height: 50px;margin-top: 5px;width: auto;"><span id="CustOrderList-Text">Customer Order List</span></a><a class="dropdown-item d-block" role="presentation"
-                                            id="CustTracker-Link" href="Sales_CustTR.html" style="height: 50px;margin-top: 5px;"><span id="CustTracker-Text">Customer Order Tracker</span></a></div>
+                                        class="dropdown-menu border rounded shadow" role="menu" id="Sales-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 205px;"><a class="dropdown-item d-block" role="presentation" id="CustPO-Link" href="Sales_CustPO.html" style="height: 50px;margin-top: 5px;"><img class="d-block" id="CustPO-Icon" src="assets/img/CustPO.png" style="width: 20px;"><span id="CustPO-Text">Customer PO</span></a>
+                                        <a
+                                            class="dropdown-item d-block" role="presentation" id="CustOrderList-Link" href="Sales_CustOL.html" style="height: 50px;margin-top: 5px;width: auto;"><img class="d-block" id="CustOrderList-Icon" src="assets/img/CustOrderList.png" style="width: 20px;"><span id="CustOrderList-Text">Customer Order List</span></a><a class="dropdown-item d-block" role="presentation" id="CustTracker-Link"
+                                                href="Sales_CustTR.html" style="height: 50px;margin-top: 5px;"><img class="d-block" id="CustTracker-Icon" src="assets/img/CustTracker.png" style="width: 20px;"><span id="CustTracker-Text">Customer Order Tracker</span></a></div>
                             </li>
                             <li class="nav-item dropdown d-block" data-bs-hover-animate="pulse" id="Reorder-Select-DD" style="width: auto;margin-right: 25px;margin-left: 0px;padding-left: 5px;"><a class="dropdown-toggle nav-link d-block" data-toggle="dropdown" aria-expanded="false" id="Reorder-Link" href="#" style="height: 100%;font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 15px;padding-right: 0;padding-left: 0;"><img class="d-block d-xl-flex" id="Reorder-Icon" src="assets/img/SYSTIMP/Reorder%20(Icon).png" style="width: 25px;padding-right: 0px;padding-left: 0px;margin-right: auto;margin-left: auto;padding-top: 15px;padding-bottom: 10px;"><span>Reorder</span></a>
                                 <div
-                                    class="dropdown-menu border rounded shadow" role="menu" id="Reorder-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 195px;"><a class="dropdown-item d-block" role="presentation" id="SuppPO-Link" href="Reorder_SuppPO.html" style="height: 50px;margin-top: 5px;"><span id="SuppPO-Text">Supplier PO</span></a><a class="dropdown-item d-block" role="presentation"
-                                        id="SuppOrderList-Link" href="Reorder_SuppOL.html" style="height: 50px;margin-top: 5px;width: auto;"><span id="SuppOrderList-Text">Supplier Order List</span></a><a class="dropdown-item d-block" role="presentation" id="SuppTracker-Link"
-                                        href="Reorder_SuppTR.html" style="height: 50px;margin-top: 5px;"><span id="SuppTracker-Text">Supplier Order Tracker</span></a></div>
+                                    class="dropdown-menu border rounded shadow" role="menu" id="Reorder-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 195px;"><a class="dropdown-item d-block" role="presentation" id="SuppPO-Link" href="Reorder_SuppPO.html" style="height: 50px;margin-top: 5px;"><img class="d-block" id="SuppPO-Icon" src="assets/img/SuppPO.png" style="width: 20px;"><span id="SuppPO-Text">Supplier PO</span></a>
+                                    <a
+                                        class="dropdown-item d-block" role="presentation" id="SuppOrderList-Link" href="Reorder_SuppOL.html" style="height: 50px;margin-top: 5px;width: auto;"><img class="d-block" id="SuppOrderList-Icon" src="assets/img/SuppOrderList.png" style="width: 20px;"><span id="SuppOrderList-Text">Supplier Order List</span></a><a class="dropdown-item d-block" role="presentation" id="SuppTracker-Link"
+                                            href="Reorder_SuppTR.html" style="height: 50px;margin-top: 5px;"><img class="d-block" id="SuppTracker-Icon" src="assets/img/SuppTracker.png" style="width: 20px;"><span id="SuppTracker-Text">Supplier Order Tracker</span></a></div>
                     </li>
                     <li class="nav-item dropdown d-block" data-bs-hover-animate="pulse" id="Reports-Select-DD" style="width: auto;margin-right: 25px;margin-left: 0px;padding-left: 5px;"><a class="dropdown-toggle nav-link d-block" data-toggle="dropdown" aria-expanded="false" id="Reports-Link" href="#" style="height: 100%;font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 15px;padding-right: 0;padding-left: 0;"><img class="d-block d-xl-flex" id="Reports-Icon" src="assets/img/SYSTIMP/Reports%20(Icon).png" style="width: 25px;padding-right: 0px;padding-left: 0px;margin-right: auto;margin-left: auto;padding-top: 15px;padding-bottom: 10px;"><span>Reports</span></a>
                         <div
-                            class="dropdown-menu border rounded shadow" role="menu" id="Reports-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 195px;"><a class="dropdown-item d-block" role="presentation" id="TotSalesEx-Link" href="Reports_Total.html" style="height: 50px;margin-top: 5px;"><span id="TotSalesEx-Text">Total Sales &amp; Expenses</span></a><a class="dropdown-item d-block"
-                                role="presentation" id="DamRet-Link" href="Reports_DamRet.html" style="height: 50px;margin-top: 5px;width: auto;"><span id="DamRet-Text">Damaged/Returned</span></a></div>
+                            class="dropdown-menu border rounded shadow" role="menu" id="Reports-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 195px;"><a class="dropdown-item d-block" role="presentation" id="TotSalesEx-Link" href="Reports_Total.html" style="height: 50px;margin-top: 5px;"><img class="d-block" id="TotSalesEx-Icon" src="assets/img/TotSalesEx.png" style="width: 20px;"><span id="TotSalesEx-Text">Total Sales &amp; Expenses</span></a>
+                            <a
+                                class="dropdown-item d-block" role="presentation" id="DamRet-Link" href="Reports_DamRet.html" style="height: 50px;margin-top: 5px;width: auto;"><img class="d-block" id="DamRet-Icon" src="assets/img/DamRet.png" style="width: 20px;"><span id="DamRet-Text">Damaged/Returned</span></a>
+            </div>
             </li>
             </ul>
         </div>
@@ -118,12 +125,11 @@
     </nav>
     <div class="container-fluid" id="Page-Content">
         <div id="Breadcrumb-Border" style="width: auto;margin-bottom: 10px;"></div>
-        <div class="d-sm-flex align-items-center mb-4" id="Page-Header">
-            <h3 class="text-dark mb-0" id="Page-Header-Title" style="color: rgb(0,0,0);font-family: ABeeZee, sans-serif;font-weight: bold;font-size: 35px;">INVENTORY: View Inventory</h3>
+        <div class="d-sm-flex align-items-center mb-4" id="Page-Header"><img id="Page-Header-Icon" src="assets/img/SYSTIMP/ViewInv.png" style="width: 60px;margin-left: 0px;margin-right: 15px;margin-top: 0px;padding-top: 0px;padding-bottom: 0px;">
+            <h3 class="text-dark mb-0" id="Page-Header-Title" style="color: rgb(0,0,0);font-family: ABeeZee, sans-serif;font-weight: bold;font-size: 35px;">Inventory: View Inventory</h3>
         </div>
-        <hr>
         <div class="card shadow" id="ViewInv_Table" style="margin-right: 8vw;margin-left: 8vw;">
-            <div class="card-header py-3" id="Table-Header" style="background-color: rgb(101,118,122);/*background: linear-gradient(to right, #2657eb, #de6161);*/">
+            <div class="card-header py-3" id="Table-Header" style="background-color: rgb(235,235,235);background: linear-gradient(to right, #2657eb, #de6161);">
                 <p class="text-center m-0 font-weight-bold" id="Table-HeaderTitle" style="font-size: 30px;font-weight: bold;font-family: 'Open Sans', sans-serif;color: #ffffff;">Our Inventory</p>
                 <div class="row" id="Table-HeaderDetails">
                     <div class="col" id="Table-HeaderDetail-1">
@@ -142,19 +148,21 @@
                 <div class="row" id="Table-Tools">
                     <div class="col-md-6 text-nowrap" id="Table-Tool1">
                         <div id="Table-Tool1-Frame" class="dataTables_length" aria-controls="dataTable"><label id="Table-ShowItemNumber">Show&nbsp;<select id="Table-ShowItem-Dropdown" class="form-control form-control-sm custom-select custom-select-sm"><option value="10" selected="">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>&nbsp;</label></div>
-                    </div>
+                    </div><!-- this is show -->
                     <div class="col-md-6" id="Table-Tool2">
                         <div class="text-md-right dataTables_filter" id="Table-Tool2-Frame"><label id="Table-Search" style="width: 350px;padding-right: 0px;margin-right: 12px;"><input type="search" id="Table-SearchBar" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label>
                             <button
                                 class="btn" id="Table-SearchButton" type="submit" style="background-color: rgba(78,115,223,0);border-color: transparent;width: auto;padding-bottom: 0px;padding-top: 0px;padding-right: 0px;padding-left: 0px;"><img id="Search-ButtonIMG" src="assets/img/SYSTIMP/Search%20(Icon).png" style="width: 20px;"></button>
                         </div>
-                    </div>
+                    </div> <!-- this is search -->
                 </div>
+                <form method="POST" action="">
                 <div class="table-responsive table mt-2" id="ViewInv-TableFrame" role="grid" aria-describedby="dataTable_info">
                     <table class="table my-0" id="ViewInv-Table">
                         <thead id="Table-Header">
-                            <tr id="Table-HeaderRow" style="background-color: #3e3e3e;font-family: Nunito, sans-serif;color: rgb(255,255,255);/*background: linear-gradient(to right, #2657eb, #de6161);*/">
+                        <tr id="Table-HeaderRow" style="background-color: #3e3e3e;font-family: Nunito, sans-serif;color: rgb(255,255,255);/*background: linear-gradient(to right, #2657eb, #de6161);*/">
                                 <th class="text-center" style="width: 40px;"><input type="checkbox" id="Checkbox-Header" disabled=""></th>
+                                <th>Product ID</th>
                                 <th>Product Name</th>
                                 <th class="text-left" style="width: 200px;">Brand</th>
                                 <th class="text-left" style="width: 150px;">QTY On Hand</th>
@@ -163,90 +171,72 @@
                             </tr>
                         </thead>
                         <tbody id="Table-Body">
+                        <?php
+                            require("connect.php");
+                            $page = $_GET["page"];
+                            if($page=="" || $page == "1"){
+                                $page1 = 0;
+                            }
+                            else{
+                                $page1 = ($page*20)-20;
+                            }
+                            $query = mysqli_query($DBConnect, "SELECT * FROM tblinventory ORDER BY pID limit $page1, 20");
+                            echo mysqli_error($DBConnect);
+                            while($retrieve = mysqli_fetch_array($query)){
+                                echo "<tr>";
+                                echo "<td><input type='checkbox' name='checkboxid[]' value=$retrieve[pID]></td>";
+                                echo "<td class='id'>".$retrieve["pID"]. "</td>";
+                                echo "<td class='name'>".$retrieve["pName"]. "</td>";
+                                echo "<td class='brand'>".$retrieve["pBrand"]. "</td>";
+                                echo "<td class='quantity'>".$retrieve["pQuantity"]. "</td>";
+                                echo "<td class='reorder'>".$retrieve["pReorderPoint"]. "</td>";
+                                if($retrieve["pQuantity"] > $retrieve["pReorderPoint"]){
+                                    $availability = $retrieve["pAvailability"];
+                                    $availability = "high";
+                                    echo "<td>".$availability."</td>";
+                                }
+                                else if($retrieve["pQuantity"] <= $retrieve["pReorderPoint"]){
+                                    $availability = $retrieve["pAvailability"];
+                                    $availability = "low";
+                                    echo "<td>".$availability."</td>";
+                                }
+
+                                echo "</tr>";
+                                
+							}
+							/*
+                            $query2 = mysqli_query($DBConnect, "SELECT * FROM tblinventory ORDER BY pID");
+                            $count = mysqli_num_rows($query2);
+                            $a = $count / 20;
+                            $a = ceil($a);
+
+                            
+                            for($b=1; $b <= $a; $b++){
+                                ?>
+                                <a a class="page-link" id="Table-PageNav-Link" href = "viewinventory.php?page=<?php echo $b; ?>" style="text-decoration:none"><?php echo $b.""; ?></a>
+                                <?php
+							}
+							*/
+
+                        ?>
+
+						<!--
                             <tr id="Table-Row">
                                 <td id="Checkbox-Entry"><input type="checkbox" id="Checkbox-EntryItem"></td>
+                                <td id="ProductID-Entry">Product ID</td>
                                 <td id="ProductName-Entry"><img class="rounded-circle mr-2" id="Product-Icon" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
                                 <td id="Brand-Entry">ProductBrand</td>
                                 <td id="QTY-Entry">ProductQTY</td>
                                 <td id="RP-Entry">ProductRP</td>
-                                <td class="table-success" id="Avail-Entry">AvailHigh<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*//*border-color: rgb(0,0,0);*/">REORDER</button></td>
+                                <td class="table-success" id="Avail-Entry">AvailHigh<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button" type="button" style="background-color: #ff7a00;color: rgb(0,0,0);font-family: 'Open Sans', sans-serif;font-weight: bold;font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;border-width: 2px;/*border-color: rgb(0,0,0);*/">REORDER</button></td>
                             </tr>
-                            <tr id="Table-Row-1">
-                                <td id="Checkbox-Entry-1"><input type="checkbox" id="Checkbox-EntryItem-1"></td>
-                                <td id="ProductName-Entry-1"><img class="rounded-circle mr-2" id="Product-Icon-1" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
-                                <td id="Brand-Entry-1">ProductBrand</td>
-                                <td id="QTY-Entry-1">ProductQTY</td>
-                                <td id="RP-Entry-1">ProductRP</td>
-                                <td class="table-danger text-danger" id="Avail-Entry-1">AvailLow<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button-1" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*//*border-color: rgb(0,0,0);*/">REORDER</button></td>
-                            </tr>
-                            <tr id="Table-Row-2">
-                                <td id="Checkbox-Entry-2"><input type="checkbox" id="Checkbox-EntryItem-2"></td>
-                                <td id="ProductName-Entry-2"><img class="rounded-circle mr-2" id="Product-Icon-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
-                                <td id="Brand-Entry-2">ProductBrand</td>
-                                <td id="QTY-Entry-2">ProductQTY</td>
-                                <td id="RP-Entry-2">ProductRP</td>
-                                <td class="table-danger text-danger" id="Avail-Entry-2">AvailLow<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button-2" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*//*border-color: transparent;*/">REORDER</button></td>
-                            </tr>
-                            <tr id="Table-Row-3">
-                                <td id="Checkbox-Entry-3"><input type="checkbox" id="Checkbox-EntryItem-3"></td>
-                                <td id="ProductName-Entry-3"><img class="rounded-circle mr-2" id="Product-Icon-3" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
-                                <td id="Brand-Entry-3">ProductBrand</td>
-                                <td id="QTY-Entry-3">ProductQTY</td>
-                                <td id="RP-Entry-3">ProductRP</td>
-                                <td class="table-danger text-danger" id="Avail-Entry-3">AvailLow<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button-3" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*/border-color: transparent;">REORDER</button></td>
-                            </tr>
-                            <tr id="Table-Row-4">
-                                <td id="Checkbox-Entry-4"><input type="checkbox" id="Checkbox-EntryItem-4"></td>
-                                <td id="ProductName-Entry-4"><img class="rounded-circle mr-2" id="Product-Icon-4" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
-                                <td id="Brand-Entry-4">ProductBrand</td>
-                                <td id="QTY-Entry-4">ProductQTY</td>
-                                <td id="RP-Entry-4">ProductRP</td>
-                                <td class="table-danger text-danger" id="Avail-Entry-4">AvailLow<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button-4" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*//*border-color: rgb(0,0,0);*/">REORDER</button></td>
-                            </tr>
-                            <tr id="Table-Row-5">
-                                <td id="Checkbox-Entry-5"><input type="checkbox" id="Checkbox-EntryItem-5"></td>
-                                <td id="ProductName-Entry-5"><img class="rounded-circle mr-2" id="Product-Icon-5" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
-                                <td id="Brand-Entry-5">ProductBrand</td>
-                                <td id="QTY-Entry-5">ProductQTY</td>
-                                <td id="RP-Entry-5">ProductRP</td>
-                                <td class="table-warning" id="Avail-Entry-5">AvailMedium<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button-5" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*//*border-color: rgb(0,0,0);*/">REORDER</button></td>
-                            </tr>
-                            <tr id="Table-Row-6">
-                                <td id="Checkbox-Entry-6"><input type="checkbox" id="Checkbox-EntryItem-6"></td>
-                                <td id="ProductName-Entry-6"><img class="rounded-circle mr-2" id="Product-Icon-6" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
-                                <td id="Brand-Entry-6">ProductBrand</td>
-                                <td id="QTY-Entry-6">ProductQTY</td>
-                                <td id="RP-Entry-6">ProductRP</td>
-                                <td class="table-warning" id="Avail-Entry-6">AvailMedium<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button-6" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*//*border-color: rgb(0,0,0);*/">REORDER</button></td>
-                            </tr>
-                            <tr id="Table-Row-7">
-                                <td id="Checkbox-Entry-7"><input type="checkbox" id="Checkbox-EntryItem-7"></td>
-                                <td id="ProductName-Entry-7"><img class="rounded-circle mr-2" id="Product-Icon-7" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
-                                <td id="Brand-Entry-7">ProductBrand</td>
-                                <td id="QTY-Entry-7">ProductQTY</td>
-                                <td id="RP-Entry-7">ProductRP</td>
-                                <td class="table-warning" id="Avail-Entry-7">AvailMedium<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button-7" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*//*border-color: rgb(0,0,0);*/">REORDER</button></td>
-                            </tr>
-                            <tr id="Table-Row-8">
-                                <td id="Checkbox-Entry-8"><input type="checkbox" id="Checkbox-EntryItem-8"></td>
-                                <td id="ProductName-Entry-8"><img class="rounded-circle mr-2" id="Product-Icon-8" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
-                                <td id="Brand-Entry-8">ProductBrand</td>
-                                <td id="QTY-Entry-8">ProductQTY</td>
-                                <td id="RP-Entry-8">ProductRP</td>
-                                <td class="table-success" id="Avail-Entry-8">AvailHigh<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button-8" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*//*border-color: rgb(0,0,0);*/">REORDER</button></td>
-                            </tr>
-                            <tr id="Table-Row-9">
-                                <td id="Checkbox-Entry-9"><input type="checkbox" id="Checkbox-EntryItem-9"></td>
-                                <td id="ProductName-Entry-9"><img class="rounded-circle mr-2" id="Product-Icon-9" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">ProductName</td>
-                                <td id="Brand-Entry-9">ProductBrand</td>
-                                <td id="QTY-Entry-9">ProductQTY</td>
-                                <td id="RP-Entry-9">ProductRP</td>
-                                <td class="table-success" id="Avail-Entry-9">AvailHigh<button class="btn btn-primary btn-sm border-dark shadow float-right" id="Reorder-Button-9" type="button" style="background-color: #ff7a00;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;/*font-weight: bold;*/font-size: 12px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;/*border-width: 2px;*//*border-color: rgb(0,0,0);*/">REORDER</button></td>
-                            </tr>
+                        -->
+
                         </tbody>
                         <tfoot id="Table-Footer" style="background-color: #dcdcdc;">
-                            <tr id="Table-FooterRow" style="color: rgb(0,0,0);/*background: linear-gradient(to right, rgba(38,87,235,0.49), rgba(222,97,97,0.5));*/background-color: #969696;">
+                        <tr id="Table-FooterRow" style="color: rgb(0,0,0);/*background: linear-gradient(to right, rgba(38,87,235,0.49), rgba(222,97,97,0.5));*/background-color: #969696;">
                                 <td><input type="checkbox" id="Checkbox-Footer" disabled=""></td>
+                                <td><strong>Product ID</strong></td>
                                 <td><strong>Product Name</strong></td>
                                 <td><strong>Brand</strong></td>
                                 <td><strong>QTY on Hand</strong></td>
@@ -256,26 +246,64 @@
                         </tfoot>
                     </table>
                 </div>
+                <!-- </form> -->
                 <div class="row" id="Table-Details">
                     <div class="col-md-6 align-self-center" id="Table-PageInd" style="width: 316px;"><span id="Table-PageInd-Range">Showing&nbsp;<span id="Table-PageInd-CurrentFirst">1</span><span>&nbsp;to&nbsp;</span><span id="Table-PageInd-CurrentLast">10</span><span>&nbsp;of&nbsp;</span><span id="Table-PageInd-MaxNum">27</span></span>
                     </div>
                     <div class="col-md-6" id="Table-PageNav-Frame">
                         <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers" id="Table-PageNavBar">
                             <ul class="pagination" id="Table-PageNav">
-                                <li class="page-item disabled" id="Table-PageNav-Prev"><a class="page-link" href="#" aria-label="Previous" id="Table-PageNav-Prev-Link"><span aria-hidden="true">«</span></a></li>
-                                <li class="page-item active" id="Table-PageNav-P1"><a class="page-link" href="#" id="Table-PageNav-P1-Link">1</a></li>
-                                <li class="page-item" id="Table-PageNav-P2"><a class="page-link" href="#" id="Table-PageNav-P2-Link">2</a></li>
-                                <li class="page-item" id="Table-PageNav-P3"><a class="page-link" href="#" id="Table-PageNav-P3-Link">3</a></li>
-                                <li class="page-item" id="Table-PageNav-Next"><a class="page-link" href="#" aria-label="Next" id="Table-PageNav-Next-Link"><span aria-hidden="true">»</span></a></li>
+
+								<!-- Previous Button
+
+                                <li class="</?php if($page <= 1){ echo ' page-item disabled'; } ?>" id="Table-PageNav-Prev">
+                                	<a class="page-link" href="</?php if($page <= 1){ echo '#'; } else { echo "?pageno=".($page - 1); } ?>" aria-label="Previous" id="Table-PageNav-Prev-Link"><span aria-hidden="true">«</span></a>
+								</li>
+
+								-->
+
+								<?php
+
+								$page = $_GET["page"];
+
+								$query2 = mysqli_query($DBConnect, "SELECT * FROM tblinventory ORDER BY pID");
+								$count = mysqli_num_rows($query2);
+								$a = $count / 20;
+								$a = ceil($a);
+
+
+								for($b=1; $b <= $a; $b++){
+									?>
+									<li class="page-item <?php if($b == $page){ echo ' active'; } ?>" id="Table-PageNav">
+										<a class="page-link" id="Table-PageNav-Link" href="viewinventory.php?page=<?php echo $b; ?>"><?php echo $b.""; ?></a>
+									</li>
+									<?php
+								}
+
+								?>
+
+                                <!-- 
+									<li class="page-item" id="Table-PageNav-P2"><a class="page-link" href="#" id="Table-PageNav-P2-Link">2</a></li>
+                                	<li class="page-item" id="Table-PageNav-P3"><a class="page-link" href="#" id="Table-PageNav-P3-Link">3</a></li>
+								-->
+
+								<!-- Next Button
+
+                                <li class="</?php if($pageno >= $a){ echo ' page-item disabled'; } ?>" id="Table-PageNav-Next">
+									<a class="page-link" href="</?php if($pageno >= $a){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>" aria-label="Next" id="Table-PageNav-Next-Link"><span aria-hidden="true">»</span></a>
+								</li>
+
+								-->
+
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <div class="row" id="Table-Button-Row">
-                    <div class="col-md-6" id="SelectReorder-Column" style="width: 100%;"><button class="btn btn-primary" id="DeleteButton-1" data-toggle="modal" type="button" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;background-color: #ff7a00;border-color: transparent;">REORDER SELECTED ITEMS</button></div>
+                    <div class="col-md-6" id="SelectReorder-Column" style="width: 100%;"><button class="btn btn-primary btn-sm border-dark shadow float-left" id="SelectReorder-Button" type="button" style="background-color: #ff7a00;color: rgb(0,0,0);font-family: 'Open Sans', sans-serif;font-weight: bold;font-size: 16px;border-radius: 50px 10px;padding-right: 15px;padding-left: 16px;border-width: 2px;/*border-color: rgb(0,0,0);*/">REORDER SELECTED ITEMS</button></div>
                     <div
-                        class="col" id="Delete-Column">
-                        <div id="Delete"><a class="btn btn-danger float-right" role="button" id="DeleteButton" data-toggle="modal" href="#DeletePopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">DELETE</a>
+                        class="col" id="DeleteInv-Column">
+                        <div id="ViewInv_Delete"><a class="btn btn-danger float-right" name="deletedisplay" type="submit" role="button" id="DeleteButton" data-toggle="modal" href="#DeletePopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">DELETE</a>
                             <div
                                 class="modal fade" role="dialog" tabindex="-1" id="DeletePopup">
                                 <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document" id="DeleteInv-Modal">
@@ -296,17 +324,25 @@
                                                     </thead>
                                                     <tbody id="DeleteTable-Body">
                                                         <tr id="DeleteTable-Row">
-                                                            <td id="ProductName-DeleteEntry">DeleteProductName1</td>
-                                                            <td id="Brand-DeleteEntry">DeleteProductBrand1</td>
-                                                            <td id="QTY-DeleteEntry">DeleteQTY1</td>
-                                                            <td id="RP-DeleteEntry">DeleteReorderPoint1</td>
+                                                            <td id="ProductName-DeleteEntry">Product Name</td>
+                                                            <td id="Brand-DeleteEntry">Product Brand</td>
+                                                            <td id="QTY-DeleteEntry">Quantity</td>
+                                                            <td id="RP-DeleteEntry">Reorder Point</td>
                                                         </tr>
-                                                        <tr id="DeleteTable-Row-1">
-                                                            <td id="ProductName-DeleteEntry-1">DeleteProductName2</td>
-                                                            <td id="Brand-DeleteEntry-1">DeleteProductBrand2</td>
-                                                            <td id="QTY-DeleteEntry-1">DeleteQTY2</td>
-                                                            <td id="RP-DeleteEntry-1">DeleteReorderPoint2</td>
-                                                        </tr>
+                                                        <?php
+                                                            require("connect.php");
+                                                            if(isset($_POST["delete"])){
+                                                                $all = $_POST["checkboxid"];
+                                                                $extract = implode(',', $all);
+                                                                echo $extract;
+                                                                $query = "DELETE FROM tblinventory WHERE pID IN($extract)";
+                                                                $query2 = mysqli_query($DBConnect, $query);
+
+                                                                if($query2){
+                                                                    echo "<script type='text/javascript'> document.location = 'viewinventory.php'; </script>";
+                                                                }
+                                                            }
+                                                        ?>
                                                     </tbody>
                                                     <tfoot id="DeleteTable-Footer" style="background-color: #dcdcdc;">
                                                         <tr id="DeleteTable-FooterRow">
@@ -320,14 +356,14 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer" id="DeleteInv-ModalFooter"><button class="btn btn-light text-danger" id="DeleteInv-CancelButton" data-dismiss="modal" type="button" style="font-family: 'Open Sans', sans-serif;">Cancel</button><button class="btn btn-danger" id="DeleteInv-ConfirmButton"
-                                                type="button" style="border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;font-family: 'Open Sans', sans-serif;">CONFIRM DELETION</button></div>
+                                                name="delete" type="submit" style="border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;font-family: 'Open Sans', sans-serif;">CONFIRM DELETION</button></div>
                                     </div>
                                 </div>
                         </div>
                 </div>
             </div>
-            <div class="col" id="Edit-Column">
-                <div id="Edit"><a class="btn btn-warning float-right" role="button" id="EditButton" data-toggle="modal" href="#EditPopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">EDIT</a>
+            <div class="col" id="EditInv-Column">
+                <div id="ViewInv_Edit"><a class="btn btn-warning float-right" role="button" id="EditButton" data-toggle="modal" href="#EditPopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">EDIT</a>
                     <div
                         class="modal fade" role="dialog" tabindex="-1" id="EditPopup">
                         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document" id="EditInv-Modal">
@@ -339,6 +375,7 @@
                                         <table class="table my-0" id="ViewInv-EditTable">
                                             <thead id="EditTable-Header">
                                                 <tr id="EditTable-HeaderRow" style="background-color: #FF7A00;font-family: Nunito, sans-serif;color: rgb(0,0,0);">
+                                                    <th>Product ID</th>
                                                     <th>Product Name</th>
                                                     <th class="text-left" style="width: 200px;">Brand</th>
                                                     <th class="text-left" style="width: 150px;">QTY On Hand</th>
@@ -346,45 +383,39 @@
                                                 </tr>
                                             </thead>
                                             <tbody id="EditTable-Body">
-                                                <tr id="EditTable-Row">
-                                                    <td id="ProductName-EditEntry" contenteditable="true">EditProductName1</td>
-                                                    <td id="Brand-EditEntry" contenteditable="true">EditProductBrand1</td>
-                                                    <td id="QTY-EditEntry" contenteditable="true">EditQTY1</td>
-                                                    <td id="RP-EditEntry" contenteditable="true">EditReorderPoint1</td>
-                                                </tr>
-                                                <tr id="EditTable-Row-1">
-                                                    <td id="ProductName-EditEntry-1" contenteditable="true">EditProductName2</td>
-                                                    <td id="Brand-EditEntry-1" contenteditable="true">EditProductBrand2</td>
-                                                    <td id="QTY-EditEntry-1" contenteditable="true">EditQTY2</td>
-                                                    <td id="RP-EditEntry-1" contenteditable="true">EditReorderPoint2</td>
-                                                </tr>
-                                                <tr id="EditTable-Row-2">
-                                                    <td id="ProductName-EditEntry-2" contenteditable="true">EditProductName3</td>
-                                                    <td id="Brand-EditEntry-2" contenteditable="true">EditProductBrand3</td>
-                                                    <td id="QTY-EditEntry-2" contenteditable="true">EditQTY3</td>
-                                                    <td id="RP-EditEntry-2" contenteditable="true">EditReorderPoint3</td>
-                                                </tr>
+                                                <?php
+                                                    require("connect.php");
+                                                    if(isset($_POST["edit"])){
+                                                        $all = $_POST["checkboxid"];
+                                                        $extract = implode($all);
+                                                        $pID = $_POST["pidedit"];
+                                                        $pName = $_POST["pnameedit"];
+                                                        $pBrand = $_POST["pbrandedit"];
+                                                        $pqty = $_POST["pqtyedit"];
+                                                        $preorder = $_POST["prpedit"];
+                                                        // echo $extract;
+                                                        $query = "UPDATE tblinventory SET pID='$pID', pName='$pName', pBrand='$pBrand',
+                                                        pQuantity='$pqty', pReorderPoint='$preorder' WHERE pID='$pID'";
+                                                        $query2 = mysqli_query($DBConnect, $query);
+
+                                                        if($query2){
+                                                            echo "<script type='text/javascript'> document.location = 'viewinventory.php'; </script>";
+                                                        }
+                                                    }
+                                                ?>
                                             </tbody>
-                                            <tfoot id="EditTable-Footer" style="background-color: #dcdcdc;">
-                                                <tr id="EditTable-FooterRow">
-                                                    <td><strong>Product Name</strong></td>
-                                                    <td><strong>Brand</strong></td>
-                                                    <td><strong>QTY on Hand</strong></td>
-                                                    <td><strong>Reorder Point</strong></td>
-                                                </tr>
-                                            </tfoot>
                                         </table>
                                     </div>
                                 </div>
                                 <div class="modal-footer" id="EditInv-ModalFooter"><button class="btn btn-light text-danger" id="EditInv-CancelButton" data-dismiss="modal" type="button" style="font-family: 'Open Sans', sans-serif;">Cancel</button><button class="btn btn-success" id="EditInv-ConfirmButton"
-                                        type="button" style="padding-right: 25px;padding-left: 25px;border-radius: 50px 10px;font-family: 'Open Sans', sans-serif;">SAVE CHANGES</button></div>
+                                        name = "edit" type="submit" style="padding-right: 25px;padding-left: 25px;border-radius: 50px 10px;font-family: 'Open Sans', sans-serif;">SAVE CHANGES</button></div>
                             </div>
                         </div>
                 </div>
             </div>
         </div>
-        <div class="col" id="Add-Column">
-            <div id="Add"><a class="btn btn-success float-right" role="button" id="AddButton" data-toggle="modal" href="#AddPopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">ADD</a>
+        <div class="col" id="AddInv-Column">
+            <div id="ViewInv_Add"><a class="btn btn-success float-right" role="button" id="AddButton" data-toggle="modal" href="#AddPopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">ADD</a>
                 <div
                     class="modal fade" role="dialog" tabindex="-1" id="AddPopup">
                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document" id="AddInv-Modal">
@@ -396,6 +427,7 @@
                                     <table class="table my-0" id="ViewInv-AddTable">
                                         <thead id="AddTable-Header">
                                             <tr id="AddTable-HeaderRow" style="background-color: #FF7A00;font-family: Nunito, sans-serif;color: rgb(0,0,0);">
+                                                <th>Product ID</th>
                                                 <th>Product Name</th>
                                                 <th class="text-left" style="width: 200px;">Brand</th>
                                                 <th class="text-left" style="width: 150px;">QTY On Hand</th>
@@ -403,17 +435,36 @@
                                             </tr>
                                         </thead>
                                         <tbody id="AddTable-Body">
-                                            <tr id="AddTable-Row">
-                                                <td id="ProductName-InputEntry"><input class="bg-white border rounded border-white" type="text" id="ProductName-Input" placeholder="Input Product Name" name="ProductName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
+                                        <tr id="AddTable-Row">
+                                            <form  method="post">
+                                                <td id="ProductID-InputEntry"><input class="bg-white border rounded border-white" type="text" id="ProductName-Input" placeholder="Product ID" name="pid" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
+                                                        autocomplete="on" readonly></td>
+                                                <td id="ProductName-InputEntry"><input class="bg-white border rounded border-white" type="text" id="ProductName-Input" placeholder="Product Name" name="pname" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
                                                         autocomplete="on"></td>
-                                                <td id="Brand-InputEntry"><input class="bg-white border rounded border-white" type="text" id="ProductBrand-Input" placeholder="Input Product Brand" name="ProductBrand Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
+                                                <td id="Brand-InputEntry"><input class="bg-white border rounded border-white" type="text" id="ProductBrand-Input" placeholder="Product Brand" name="pbrand" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;"
                                                         autocomplete="on"></td>
-                                                <td id="QTY-InputEntry"><input class="border rounded-0 border-white" type="number" id="QTY-Input" name="QTY Input" placeholder="Input QTY" style="width: 100%;"></td>
-                                                <td id="RP-InputEntry"><input class="border rounded-0 border-white" type="number" id="RP-Input" name="RP Input" placeholder="Input Reorder Point" style="width: 100%;"></td>
+                                                <td id="QTY-InputEntry"><input class="border rounded-0 border-white" type="number" id="QTY-Input" name="pqty" placeholder="Quantity" style="width: 100%;"></td>
+                                                <td id="RP-InputEntry"><input class="border rounded-0 border-white" type="number" id="RP-Input" name="prp" placeholder="Reorder Point" style="width: 100%;"></td>
                                             </tr>
+                                            <?php
+                                                require("connect.php");
+                                                if(isset ($_POST["confirm"])){
+                                                    $pid = $_POST["pid"];
+                                                    $pname = $_POST["pname"];
+                                                    $pbrand = $_POST["pbrand"];
+                                                    $pqty = $_POST["pqty"];
+                                                    $preorder = $_POST["prp"];
+                                                    $add = "INSERT INTO tblinventory (pID, pName, pQuantity, pReorderPoint) 
+                                                        VALUES ('$pid', '$pname', '$pqty', '$preorder')";
+                                                    mysqli_query($DBConnect, $add) or die (mysqli_error($DBConnect));
+                                                    echo "<script type='text/javascript'> document.location = 'viewinventory.php'; </script>";
+
+                                                }
+                                            ?>
                                         </tbody>
                                         <tfoot id="AddTable-Footer" style="background-color: #dcdcdc;">
                                             <tr id="AddTable-FooterRow">
+                                                <td><strong>Product ID</strong></td>
                                                 <td><strong>Product Name</strong></td>
                                                 <td><strong>Brand</strong></td>
                                                 <td><strong>QTY on Hand</strong></td>
@@ -423,10 +474,11 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="modal-footer" id="AddInv-ModalFooter"><button class="btn btn-light text-danger" id="AddInv-CancelButton" data-dismiss="modal" type="button" style="font-family: 'Open Sans', sans-serif;">Cancel</button><button class="btn btn-success" id="AddInv-ConfirmButton" type="button"
-                                    style="font-family: 'Open Sans', sans-serif;padding-right: 25px;padding-left: 25px;border-radius: 50px 10px;">CONFIRM</button></div>
+                            <div class="modal-footer" id="AddInv-ModalFooter"><button class="btn btn-light text-danger" id="AddInv-CancelButton" data-dismiss="modal" type="button" style="font-family: 'Open Sans', sans-serif;">Cancel</button><button class="btn btn-success" id="AddInv-ConfirmButton" type="submit"
+                                    name = "confirm" style="font-family: 'Open Sans', sans-serif;padding-right: 25px;padding-left: 25px;border-radius: 50px 10px;">CONFIRM</button></div>
                         </div>
                     </div>
+                    </form>
             </div>
         </div>
     </div>
@@ -449,6 +501,7 @@
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src='custom.js'></script>
 </body>
 
 </html>
