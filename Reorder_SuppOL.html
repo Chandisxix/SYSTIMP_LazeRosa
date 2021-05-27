@@ -55,7 +55,7 @@
                     <li class="nav-item dropdown d-block" data-bs-hover-animate="pulse" id="Reports-Select-DD" style="width: auto;margin-right: 25px;margin-left: 0px;padding-left: 5px;"><a class="dropdown-toggle nav-link d-block" data-toggle="dropdown" aria-expanded="false" id="Reports-Link" href="#" style="height: 100%;font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 15px;padding-right: 0;padding-left: 0;"><img class="d-block d-xl-flex" id="Reports-Icon" src="assets/img/SYSTIMP/Reports%20(Icon).png" style="width: 25px;padding-right: 0px;padding-left: 0px;margin-right: auto;margin-left: auto;padding-top: 15px;padding-bottom: 10px;"><span>Reports</span></a>
                         <div
                             class="dropdown-menu border rounded shadow" role="menu" id="Reports-Dropdown-Submenu" style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-family: ABeeZee, sans-serif;font-size: 14px;width: 195px;"><a class="dropdown-item d-block" role="presentation" id="TotSalesEx-Link" href="Reports_Total.html" style="height: 50px;margin-top: 5px;"><span id="TotSalesEx-Text">Total Sales &amp; Expenses</span></a><a class="dropdown-item d-block"
-                                role="presentation" id="DamRet-Link" href="Reports_DamRet.html" style="height: 50px;margin-top: 5px;width: auto;"><span id="DamRet-Text">Damaged/Returned</span></a></div>
+                                role="presentation" id="Shrink-Link" href="Reports_Shrink.html" style="height: 50px;margin-top: 5px;width: auto;"><span id="Shrink-Text">Shrinkages</span></a></div>
             </li>
             </ul>
         </div>
@@ -105,7 +105,7 @@
         </li>
         <div class="d-none d-sm-block topbar-divider" id="Header-Divider"></div>
         <li class="nav-item dropdown no-arrow" role="presentation" id="User-Profile-Dropdown">
-            <div class="nav-item dropdown no-arrow" id="User-Profile-Frame"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="User-Profile-Link" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small" id="User-Message" style="font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 17px;">Hello,&nbsp;<span class="d-none d-lg-inline mr-2 text-gray-600 small" id="Username" style="font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 17px;">Patrick</span><span class="d-none d-lg-inline mr-2 text-gray-600 small" id="Welcome-ExclPt" style="font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 17px;">!</span></span><img class="border rounded-circle img-profile" data-bs-hover-animate="tada" id="User-Avatar" src="assets/img/Avatar.jpeg" style="width: 50px;height: 50px;"></a>
+            <div class="nav-item dropdown no-arrow" id="User-Profile-Frame"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="User-Profile-Link" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small" id="User-Message" style="font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 17px;">Hello,&nbsp;<span class="d-none d-lg-inline mr-2 text-gray-600 small" id="Username" style="font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 17px;">Patrick</span><span class="d-none d-lg-inline mr-2 text-gray-600 small" id="Welcome-ExclPt" style="font-family: ABeeZee, sans-serif;color: rgb(0,0,0);font-size: 17px;">!</span></span><img class="border rounded-circle img-profile" data-bs-hover-animate="tada" id="User-Avatar" src="assets/img/SYSTIMP/Avatar.jpeg" style="width: 50px;height: 50px;"></a>
                 <div
                     class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu" id="UserProfile-DD"><a class="dropdown-item" role="presentation" id="UserProfile-DDItem-Profile" href="#" style="font-family: ABeeZee, sans-serif;"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400" id="UserProfile-DDItem-ProfileIcon"></i>&nbsp;Profile</a>
                     <a
@@ -119,7 +119,7 @@
     <div class="container-fluid" id="Page-Content">
         <div id="Breadcrumb-Border" style="width: auto;margin-bottom: 10px;"></div>
         <div class="d-sm-flex align-items-center mb-4" id="Page-Header">
-            <h3 class="text-dark mb-0" id="Page-Header-Title" style="color: rgb(0,0,0);font-family: ABeeZee, sans-serif;font-weight: bold;font-size: 35px;">REORDER: Supplier Order List</h3>
+            <h3 class="text-dark mb-0" id="Page-Header-Title" style="color: rgb(0,0,0);font-family: ABeeZee, sans-serif;font-weight: bold;font-size: 2.5vw;">REORDER: Supplier Order List</h3>
         </div>
         <hr>
         <div class="card shadow" id="SuppOL_Table" style="margin-right: 8vw;margin-left: 8vw;">
@@ -284,113 +284,172 @@
                     </div>
                 </div>
                 <div class="row" id="Table-Button-Row">
-                    <div class="col offset-xl-6" id="Delete-Column">
-                        <div id="Delete"><a class="btn btn-danger float-right" role="button" id="DeleteButton" data-toggle="modal" href="#DeletePopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">DELETE</a>
+                    <div class="col-xl-2 offset-xl-0" id="View-Column">
+                        <div id="View"><a class="btn btn-info float-right" role="button" id="ViewButton" data-toggle="modal" href="#ViewPopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">VIEW</a>
                             <div
-                                class="modal fade" role="dialog" tabindex="-1" id="DeletePopup">
-                                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document" id="Delete-Modal">
-                                    <div class="modal-content" id="Delete-Modal-Content">
-                                        <div class="modal-header" id="Delete-Modal-Header" style="background-color: #e74a3b;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;">
-                                            <h4 id="Delete-Title" style="font-size: 30px;font-weight: normal;margin-top: 8px;">Delete Selected Supplier Order List Items?</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" id="Delete-CloseButton"><span aria-hidden="true">×</span></button></div>
-                                        <div class="modal-body"
-                                            id="Delete-ModalBody">
-                                            <div class="table-responsive table mt-2" id="DeleteTableFrame" role="grid" aria-describedby="dataTable_info" style="width: auto;">
-                                                <table class="table my-0" id="DeleteTable">
-                                                    <thead id="DeleteTable-Header">
-                                                        <tr class="text-center" id="DeleteTable-HeaderRow" style="background-color: #FF7A00;font-family: Nunito, sans-serif;color: rgb(0,0,0);">
-                                                            <th>PO #</th>
-                                                            <th style="width: 180px;">Date Ordered</th>
-                                                            <th class="text-left" style="width: 275px;">Supplier Name</th>
-                                                            <th>Mode of Payment</th>
-                                                            <th>Courier</th>
-                                                            <th style="width: 150px;">Status</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="DeleteTable-Body">
-                                                        <tr class="text-center" id="DeleteTable-Row">
-                                                            <td id="PONum-DeleteEntry">DeletePO#</td>
-                                                            <td id="DateOrdered-DeleteEntry">DeleteDateOrdered</td>
-                                                            <td class="text-left" id="CustName-DeleteEntry">DeleteSupplierName</td>
-                                                            <td id="MoP-DeleteEntry">DeleteMoP</td>
-                                                            <td id="Courier-DeleteEntry">DeleteCourier</td>
-                                                            <td id="Status-DeleteEntry">DeleteStatus</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tfoot id="DeleteTable-Footer" style="background-color: #dcdcdc;">
-                                                        <tr class="text-center" id="DeleteTable-FooterRow">
-                                                            <td><strong>PO #</strong></td>
-                                                            <td><strong>Date Ordered</strong></td>
-                                                            <td class="text-left"><strong class="text-left">Supplier Name</strong></td>
-                                                            <td style="font-weight: bold;">Mode of Payment</td>
-                                                            <td style="font-weight: bold;">Courier</td>
-                                                            <td><strong>Status</strong></td>
-                                                        </tr>
-                                                    </tfoot>
-                                                </table>
-                                            </div>
+                                class="modal fade" role="dialog" tabindex="-1" id="ViewPopup">
+                                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document" id="View-Modal">
+                                    <div class="modal-content" id="View-Modal-Content">
+                                        <div class="modal-header" id="View-Modal-Header" style="background-color: #1485ee;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;">
+                                            <h4 id="View-Title" style="font-size: 30px;font-weight: normal;margin-top: 8px;">View Supplier Purchase Order</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" id="View-CloseButton"><span aria-hidden="true">×</span></button></div>
+                                        <div class="modal-body" id="View-ModalBody">
+                                            <div class="row" id="ModalTable-PODetails">
+                                                <div class="col-auto col-md-6 col-xl-6 text-nowrap" id="ModalTable-PODetailCol1" style="padding-top: 12px;padding-bottom: 12px;width: 370px;">
+                                                    <div id="ModalTable-PODetail1" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;max-width: 25vw;"><label id="ModalTable-PONumLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;font-size: 1.1vw;">Supplier PO #:&nbsp;<span id="ModalTable-PONum-Value" style="margin-left: 1vw;">SuppPONum</span></label></div>
+                                                    <div
+                                                        id="ModalTable-PODetail2" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;"><label id="ModalTable-SuppNameLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;font-size: 1.1vw;">Supplier Name:&nbsp;<span id="ModalTable-SuppName-Value" style="margin-left: 1vw;">SuppName</span></label></div>
+                                                <div
+                                                    id="ModalTable-PODetail3" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;"><label id="ModalTable-SuppEmailLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;font-size: 1.1vw;">Supplier Email:&nbsp;<span id="ModalTable-SuppEmail-Value" style="margin-left: 1vw;">SuppEmail</span></label></div>
                                         </div>
-                                        <div class="modal-footer" id="Delete-ModalFooter"><button class="btn btn-light text-danger" id="Delete-CancelButton" data-dismiss="modal" type="button" style="font-family: 'Open Sans', sans-serif;">Cancel</button><button class="btn btn-danger" id="Delete-ConfirmButton"
-                                                type="button" style="border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;font-family: 'Open Sans', sans-serif;">CONFIRM DELETION</button></div>
-                                    </div>
+                                        <div class="col-auto col-md-6 col-xl-6 offset-xl-0 text-nowrap" id="ModalTable-PODetailCol2" style="padding-top: 12px;padding-bottom: 12px;width: 370px;">
+                                            <div id="ModalTable-PODetail4" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;"><label id="ModalTable-SuppAddrLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;font-size: 1.1vw;">Supplier Address:&nbsp;<span id="ModalTable-SuppAddr-Value" style="margin-left: 1vw;">SuppAddress</span></label></div>
+                                            <div
+                                                id="ModalTable-PODetail5" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;"><label id="ModalTable-SuppContactLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;font-size: 1.1vw;">Supplier Contact Number:&nbsp;<span id="ModalTable-SuppContact-Value" style="margin-left: 1vw;">SuppContactNum</span></label></div>
+                                        <div
+                                            id="ModalTable-PODetail6" class="dataTables_length" aria-controls="dataTable" style="padding-top: 10px;padding-bottom: 10px;width: 100%;"><label id="ModalTable-MoPLabel" style="margin-top: 0px;margin-bottom: 0px;width: 100%;font-size: 1.1vw;">Mode of Payment:&nbsp;<span id="ModalTable-MoP-Value" style="margin-left: 1vw;">MOP</span></label></div>
                                 </div>
                         </div>
+                        <div class="table-responsive table mt-2" id="SuppPO-ModalTableFrame" role="grid" aria-describedby="dataTable_info">
+                            <table class="table my-0" id="SuppPO-ModalTable">
+                                <thead id="ModalTable-Header">
+                                    <tr class="text-center" id="ModalTable-HeaderRow" style="background-color: #3e3e3e;font-family: Nunito, sans-serif;color: rgb(255,255,255);/*background: linear-gradient(0deg, rgba(27,142,144,1) 0%, rgba(18,38,38,1) 5%, rgba(0,0,0,1) 100%);*//*background: #6a11cb;*//*background: linear-gradient(to right, rgba(106, 17, 203, 0.5), rgba(37, 117, 252, 0.5));*//*background: #de6161;*//*background: -webkit-linear-gradient(to right, #2657eb, #de6161);*//*background: linear-gradient(to right, #2657eb, #de6161);*/">
+                                        <th class="text-left" style="width: 500px;">Product Name</th>
+                                        <th>QTY</th>
+                                        <th>Unit Price</th>
+                                        <th>Amount Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ModalTable-Body">
+                                    <tr class="text-center" id="ModalTable-Row">
+                                        <td class="text-left" id="ProductName-Entry">ProductName</td>
+                                        <td id="QTY-Entry">QTY</td>
+                                        <td id="UnitPrice-Entry">UnitPrice</td>
+                                        <td id="AmountCost-Entry">AmountCost</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot id="ModalTable-Footer" style="background-color: #dcdcdc;">
+                                    <tr class="text-center" id="ModalTable-FooterRow" style="font-weight: bold;color: rgb(0,0,0);/*background: linear-gradient(to right, rgba(38,87,235,0.49), rgba(222,97,97,0.5));*/background-color: #969696;">
+                                        <td class="text-left" style="font-weight: normal;"><strong></strong></td>
+                                        <td></td>
+                                        <td class="text-right" id="SuppPO-TotalCostLabel" style="font-weight: bold;font-size: 20px;">TOTAL COST:</td>
+                                        <td id="SuppPO-TotalCost" style="font-size: 20px;"></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="col" id="Add-Column">
-                    <div id="Add"><a class="btn btn-success float-right" role="button" id="AddButton" data-toggle="modal" href="#AddPopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">ADD</a>
-                        <div
-                            class="modal fade" role="dialog" tabindex="-1" id="AddPopup">
-                            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document" id="Add-Modal">
-                                <div class="modal-content" id="Add-ModalContent">
-                                    <div class="modal-header" id="Add-ModalHeader" style="background-color: rgb(28,200,138);color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;">
-                                        <h4 id="Add-Title" style="font-size: 30px;font-weight: normal;margin-top: 8px;">Add to Supplier Order List</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" id="Add-CloseButton"><span aria-hidden="true">×</span></button></div>
-                                    <div class="modal-body" id="Add-ModalBody">
-                                        <div class="table-responsive table mt-2" id="AddTableFrame" role="grid" aria-describedby="dataTable_info" style="width: auto;">
-                                            <table class="table my-0" id="AddTable">
-                                                <thead id="AddTable-Header">
-                                                    <tr class="text-center" id="AddTable-HeaderRow" style="background-color: #FF7A00;font-family: Nunito, sans-serif;color: rgb(0,0,0);">
-                                                        <th>PO #</th>
-                                                        <th style="width: 180px;">Date Ordered</th>
-                                                        <th class="text-left" style="width: 275px;">Supplier Name</th>
-                                                        <th>Mode of Payment</th>
-                                                        <th>Courier</th>
-                                                        <th style="width: 150px;">Status</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="AddTable-Body">
-                                                    <tr id="AddTable-Row">
-                                                        <td id="PONum-InputEntry"><input type="number" id="PONum-Input" style="border-color: transparent;width: 100px;" name="PONum Input" placeholder="Input PO #"></td>
-                                                        <td id="DateOrd-InputEntry"><input id="DateOrd-Input" type="date" style="border-color: transparent;background: transparent;" name="DateOrdered Input"></td>
-                                                        <td id="SuppName-InputEntry"><input class="bg-white border rounded border-white" type="text" id="SuppName-Input" placeholder="Input Supplier Name" name="SuppName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;border-color: transparent;background: transparent;background-color: transparent;"
-                                                                autocomplete="on"></td>
-                                                        <td id="MoP-InputEntry"><select id="MoP-Input" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;" name="MoP Input"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
-                                                        <td
-                                                            id="Courier-InputEntry"><select id="Courier-Input" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;" name="Courier Input"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
-                                                            <td
-                                                                id="Status-InputEntry"><select id="Status-Input" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;" name="Status Input"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
-                                                    </tr>
-                                                </tbody>
-                                                <tfoot id="AddTable-Footer" style="background-color: #dcdcdc;">
-                                                    <tr class="text-center" id="AddTable-FooterRow">
-                                                        <td><strong>PO #</strong></td>
-                                                        <td><strong>Date Ordered</strong></td>
-                                                        <td class="text-left"><strong>Supplier Name</strong></td>
-                                                        <td style="font-weight: bold;">Mode of Payment</td>
-                                                        <td style="font-weight: bold;">Courier</td>
-                                                        <td><strong>Status</strong></td>
-                                                    </tr>
-                                                </tfoot>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer" id="Add-ModalFooter"><button class="btn btn-light text-danger" id="Add-CancelButton" data-dismiss="modal" type="button" style="font-family: 'Open Sans', sans-serif;">Cancel</button><button class="btn btn-success" id="Add-ConfirmButton"
-                                            type="button" style="font-family: 'Open Sans', sans-serif;padding-right: 25px;padding-left: 25px;border-radius: 50px 10px;">CONFIRM</button></div>
-                                </div>
-                            </div>
-                    </div>
+                    <div class="modal-footer" id="View-ModalFooter"><button class="btn btn-danger" id="View-CloseButton" type="button" style="border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;font-family: 'Open Sans', sans-serif;">CLOSE</button></div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+    <div class="col-xl-3 offset-xl-4" id="Delete-Column">
+        <div id="Delete"><a class="btn btn-danger float-right" role="button" id="DeleteButton" data-toggle="modal" href="#DeletePopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">DELETE</a>
+            <div
+                class="modal fade" role="dialog" tabindex="-1" id="DeletePopup">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document" id="Delete-Modal">
+                    <div class="modal-content" id="Delete-Modal-Content">
+                        <div class="modal-header" id="Delete-Modal-Header" style="background-color: #e74a3b;color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;">
+                            <h4 id="Delete-Title" style="font-size: 30px;font-weight: normal;margin-top: 8px;">Delete Selected Supplier Order List Items?</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" id="Delete-CloseButton"><span aria-hidden="true">×</span></button></div>
+                        <div class="modal-body" id="Delete-ModalBody">
+                            <div class="table-responsive table mt-2" id="DeleteTableFrame" role="grid" aria-describedby="dataTable_info" style="width: auto;">
+                                <table class="table my-0" id="DeleteTable">
+                                    <thead id="DeleteTable-Header">
+                                        <tr class="text-center" id="DeleteTable-HeaderRow" style="background-color: #FF7A00;font-family: Nunito, sans-serif;color: rgb(0,0,0);">
+                                            <th>PO #</th>
+                                            <th style="width: 180px;">Date Ordered</th>
+                                            <th class="text-left" style="width: 275px;">Supplier Name</th>
+                                            <th>Mode of Payment</th>
+                                            <th>Courier</th>
+                                            <th style="width: 150px;">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="DeleteTable-Body">
+                                        <tr class="text-center" id="DeleteTable-Row">
+                                            <td id="PONum-DeleteEntry">DeletePO#</td>
+                                            <td id="DateOrdered-DeleteEntry">DeleteDateOrdered</td>
+                                            <td class="text-left" id="CustName-DeleteEntry">DeleteSupplierName</td>
+                                            <td id="MoP-DeleteEntry">DeleteMoP</td>
+                                            <td id="Courier-DeleteEntry">DeleteCourier</td>
+                                            <td id="Status-DeleteEntry">DeleteStatus</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot id="DeleteTable-Footer" style="background-color: #dcdcdc;">
+                                        <tr class="text-center" id="DeleteTable-FooterRow">
+                                            <td><strong>PO #</strong></td>
+                                            <td><strong>Date Ordered</strong></td>
+                                            <td class="text-left"><strong class="text-left">Supplier Name</strong></td>
+                                            <td style="font-weight: bold;">Mode of Payment</td>
+                                            <td style="font-weight: bold;">Courier</td>
+                                            <td><strong>Status</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer" id="Delete-ModalFooter"><button class="btn btn-light text-danger" id="Delete-CancelButton" data-dismiss="modal" type="button" style="font-family: 'Open Sans', sans-serif;">Cancel</button><button class="btn btn-danger" id="Delete-ConfirmButton" type="button"
+                                style="border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;font-family: 'Open Sans', sans-serif;">CONFIRM DELETION</button></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-xl-3" id="Add-Column">
+        <div id="Add"><a class="btn btn-success float-right" role="button" id="AddButton" data-toggle="modal" href="#AddPopup" style="font-family: 'Open Sans', sans-serif;font-weight: normal;border-radius: 50px 10px;padding-right: 25px;padding-left: 25px;border-width: 2px;">ADD</a>
+            <div
+                class="modal fade" role="dialog" tabindex="-1" id="AddPopup">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document" id="Add-Modal">
+                    <div class="modal-content" id="Add-ModalContent">
+                        <div class="modal-header" id="Add-ModalHeader" style="background-color: rgb(28,200,138);color: rgb(255,255,255);font-family: 'Open Sans', sans-serif;">
+                            <h4 id="Add-Title" style="font-size: 30px;font-weight: normal;margin-top: 8px;">Add to Supplier Order List</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close" id="Add-CloseButton"><span aria-hidden="true">×</span></button></div>
+                        <div class="modal-body" id="Add-ModalBody">
+                            <div class="table-responsive table mt-2" id="AddTableFrame" role="grid" aria-describedby="dataTable_info" style="width: auto;">
+                                <table class="table my-0" id="AddTable">
+                                    <thead id="AddTable-Header">
+                                        <tr class="text-center" id="AddTable-HeaderRow" style="background-color: #FF7A00;font-family: Nunito, sans-serif;color: rgb(0,0,0);">
+                                            <th>PO #</th>
+                                            <th style="width: 180px;">Date Ordered</th>
+                                            <th class="text-left" style="width: 275px;">Supplier Name</th>
+                                            <th>Mode of Payment</th>
+                                            <th>Courier</th>
+                                            <th style="width: 150px;">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="AddTable-Body">
+                                        <tr id="AddTable-Row">
+                                            <td id="PONum-InputEntry"><input type="number" id="PONum-Input" style="border-color: transparent;width: 100px;" name="PONum Input" placeholder="Input PO #"></td>
+                                            <td id="DateOrd-InputEntry"><input id="DateOrd-Input" type="date" style="border-color: transparent;background: transparent;" name="DateOrdered Input"></td>
+                                            <td id="SuppName-InputEntry"><input class="bg-white border rounded border-white" type="text" id="SuppName-Input" placeholder="Input Supplier Name" name="SuppName Input" style="width: 100%;height: 100%;padding-bottom: 0px;padding-top: 0px;border-color: transparent;background: transparent;background-color: transparent;"
+                                                    autocomplete="on"></td>
+                                            <td id="MoP-InputEntry"><select id="MoP-Input" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;" name="MoP Input"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
+                                            <td
+                                                id="Courier-InputEntry"><select id="Courier-Input" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;" name="Courier Input"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
+                                                <td
+                                                    id="Status-InputEntry"><select id="Status-Input" style="border-color: transparent;background: transparent;font-family: Nunito, sans-serif;" name="Status Input"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot id="AddTable-Footer" style="background-color: #dcdcdc;">
+                                        <tr class="text-center" id="AddTable-FooterRow">
+                                            <td><strong>PO #</strong></td>
+                                            <td><strong>Date Ordered</strong></td>
+                                            <td class="text-left"><strong>Supplier Name</strong></td>
+                                            <td style="font-weight: bold;">Mode of Payment</td>
+                                            <td style="font-weight: bold;">Courier</td>
+                                            <td><strong>Status</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer" id="Add-ModalFooter"><button class="btn btn-light text-danger" id="Add-CancelButton" data-dismiss="modal" type="button" style="font-family: 'Open Sans', sans-serif;">Cancel</button><button class="btn btn-success" id="Add-ConfirmButton" type="button"
+                                style="font-family: 'Open Sans', sans-serif;padding-right: 25px;padding-left: 25px;border-radius: 50px 10px;">CONFIRM</button></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    </div>
     </div>
     </div>
     <div></div>
